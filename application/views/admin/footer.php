@@ -72,7 +72,7 @@
     <!--=================================================-->
     
     <!--Demo script [ DEMONSTRATION ]-->
-    <script src="<?php echo base_url();?>assets/adminlte/js/demo/nifty-demo.min.js"></script>
+    <!-- <script src="<?php echo base_url();?>assets/adminlte/js/demo/nifty-demo.min.js"></script> -->
 
     
     <!--Flot Chart [ OPTIONAL ]-->
