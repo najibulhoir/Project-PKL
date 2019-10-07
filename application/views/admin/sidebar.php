@@ -67,6 +67,7 @@
                                 <!--================================-->
                                 <div id="mainnav-shortcut" class="hidden">
                                     <ul class="list-unstyled shortcut-wrap">
+                                    	
                                         <li class="col-xs-3" data-content="My Profile">
                                             <a class="shortcut-grid" href="#">
                                                 <div class="icon-wrap icon-wrap-sm icon-circle bg-mint">
@@ -102,11 +103,20 @@
 
 
                                 <ul id="mainnav-menu" class="list-group">
-						
+									
 						            <!--Category name-->
 						            <li class="list-header">Navigation</li>
 						
 						            <!--Menu list item-->
+						            <li>
+						                <a href="<?= base_url().'Dashboard' ?>">
+						                    <i class="demo-pli-gear"></i>
+						                    <span class="menu-title">
+												Beranda
+											</span>
+						                </a>
+						            </li>
+
 						            <li class="active-sub">
 						                <a href="#">
 						                    <i class="demo-pli-home"></i>
@@ -160,6 +170,7 @@
 
                 </div>
             </nav>
+
             <!--===================================================-->
             <!--END MAIN NAVIGATION-->
 </body>
