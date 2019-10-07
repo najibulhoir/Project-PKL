@@ -17,4 +17,9 @@ class Admin extends CI_Controller{
     $this->load->view('admin/footer.php');
   }
 
+  function pegawai()
+  {
+    $this->load->view('admin/d_pegawai.php');
+  }
+
 }

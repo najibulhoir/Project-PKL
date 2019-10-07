@@ -134,8 +134,7 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="layouts-collapsed-navigation.html">Data Pegawai</a></li>
-											<li><a href="layouts-offcanvas-navigation.html">Tambah pegawai</a></li>
+						                    <li><a href="<?php echo base_url('Admin/pegawai') ?>">Data Pegawai</a></li>
 											
 											
 						                </ul>
