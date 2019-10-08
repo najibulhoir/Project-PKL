@@ -435,11 +435,11 @@
 
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <ol class="breadcrumb">
-					<li><a href="#"><i class="demo-pli-home"></i></a></li>
-					<li><a href="#">Tables</a></li>
-					<li class="active">Data Tables</li>
-                    </ol>
+                    <!-- <ol class="breadcrumb">
+					<li><a href="#"><i class="demo-pli-home"></i></a></li> -->
+					<!-- <li><a href="#">Tables</a></li>
+					<li class="active">Data Tables</li> -->
+                    <!-- </ol> -->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
 
@@ -459,7 +459,8 @@
                             </p>
 					    </div>
 					    <div class="panel-body">
-					        <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <?php $this->load->view('admin/barang');?>
+					        <!-- <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
 					            <thead>
 					                <tr>
 					                    <th>No</th>
@@ -487,14 +488,14 @@
                                     </tr>
                              
 					            </tbody>
-					        </table>
+					        </table> -->
 					    </div>
 					</div>
 					<!--===================================================-->
 					<!-- End Striped Table -->
 					
 					<!-- Tombol untuk menampilkan modal-->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button> -->
  
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
