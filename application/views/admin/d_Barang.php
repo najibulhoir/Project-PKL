@@ -454,8 +454,8 @@
 					<!--===================================================-->
 					<div class="panel">
 					    <div class="panel-heading">
-					        <h3 class="panel-title">Tambah Data</h3>
-                            <p><a href="#" class="btn btn-success" data-target="#ModalAdd" data-toggle="modal">Add Data</a>
+					        <h3 class="panel-title">Data Barang</h3>
+                            <p>
                             </p>
 					    </div>
 					    <div class="panel-body">
@@ -473,7 +473,19 @@
 					                </tr>
 					            </thead>
 					            <tbody>
-					                
+					                <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th> </th>
+                                        <th> </th>
+                                        <th> </th>
+                                        <th> </th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                             
 					            </tbody>
 					        </table>
 					    </div>
@@ -481,7 +493,31 @@
 					<!--===================================================-->
 					<!-- End Striped Table -->
 					
-					
+					<!-- Tombol untuk menampilkan modal-->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
+ 
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- konten modal-->
+            <div class="modal-content">
+                <!-- heading modal -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Tambah Barang</h4>
+                </div>
+                <!-- body modal -->
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <!-- footer modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
 					
 					
                 </div>
@@ -864,7 +900,7 @@
 						            <li class="list-header">Navigation</li>
 						
 						            <!--Menu list item-->
-						            <li>
+						            <li class="active-sub">
 						                <a href="<?= base_url().'Dashboard' ?>">
 						                    <i class="demo-pli-gear"></i>
 						                    <span class="menu-title">
@@ -873,7 +909,7 @@
 						                </a>
 						            </li>
 
-						            <li class="active-sub">
+						            
 						                <a href="#">
 						                    <i class="demo-pli-home"></i>
 						                    <span class="menu-title">Barang</span>
@@ -905,7 +941,7 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="<?php echo base_url('Dashboard-3/Barang') ?>">Data Barang</a></li>
+						                    <li><a href="<?php echo base_url('Dashboard-3/Barang') ?>">Data pegawai</a></li>
 											
 											
 						                </ul>
@@ -916,12 +952,22 @@
 						                <a href="widgets.html">
 						                    <i class="demo-pli-gear"></i>
 						                    <span class="menu-title">
-												Kritik & Saran
-												<span class="pull-right badge badge-warning">24</span>
+												Faqs
+												<span class="pull-right badge badge-warning"></span>
 											</span>
 						                </a>
 						            </li>
-						
+						                <li>
+                                        <a href="widgets.html">
+                                            <i class="demo-pli-gear"></i>
+                                            <span class="menu-title">
+                                            Pengaturan
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>  
+
+
 
                             </div>
                         </div>

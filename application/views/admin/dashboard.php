@@ -770,7 +770,7 @@
 						            <li class="list-header">Navigation</li>
 						
 						            <!--Menu list item-->
-						            <li>
+						            <li class="active-sub">
 						                <a href="<?= base_url().'Dashboard' ?>">
 						                    <i class="demo-pli-gear"></i>
 						                    <span class="menu-title">
@@ -779,7 +779,7 @@
 						                </a>
 						            </li>
 
-						            <li class="active-sub">
+						            <li>
 						                <a href="#">
 						                    <i class="demo-pli-home"></i>
 						                    <span class="menu-title">Barang</span>
@@ -818,12 +818,21 @@
 						                <a href="widgets.html">
 						                    <i class="demo-pli-gear"></i>
 						                    <span class="menu-title">
-												Kritik & Saran
-												<span class="pull-right badge badge-warning">24</span>
+												Faqs
+												<span class="pull-right badge badge-warning"></span>
 											</span>
 						                </a>
 						            </li>
-						
+						               
+                                       <li>
+                                        <a href="widgets.html">
+                                            <i class="demo-pli-gear"></i>
+                                            <span class="menu-title">
+                                            Settings
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>   
 
                             </div>
                         </div>
