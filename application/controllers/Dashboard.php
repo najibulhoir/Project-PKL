@@ -11,12 +11,7 @@ class Dashboard extends CI_Controller{
 
   function index()
   {
-
-    $this->load->view('admin/header.php');
-
-    
-    $this->load->view('admin/sidebar.php');
-    $this->load->view('admin/footer.php');
+    $this->load->view('admin/dashboard.php');
   }
 
   function pegawai()
