@@ -118,7 +118,8 @@
 									        <li><a href="#">Sreen Lock</a></li>
 									        <li><a href="#">Maintenance</a></li>
 									        <li><a href="#">Invoice</a></li>
-									        <li><a href="#" class="disabled">Disabled</a></li>                                        </ul>
+									        <li><a href="#" class="disabled">Disabled</a></li>                                       
+                                         </ul>
 
                                     </div>
                                     <div class="col-sm-4 col-md-3">

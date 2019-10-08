@@ -388,9 +388,6 @@
 										<!-- body modal -->
 										<div class="modal-body">
 										
-
-												
-											</form>
 										</div>
 										<!-- footer modal -->
 										<div class="modal-footer">
@@ -402,10 +399,11 @@
 						   </div>
 					    </div>
 					</div>
+
+
+									
 					<!--===================================================-->
 					<!-- End Striped Table -->
-					
-					
 					
 					
                 </div>
