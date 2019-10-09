@@ -12,7 +12,7 @@ class Databarang extends CI_Controller {
 	public function index(){
 		$data['barang'] = $this->Barang->view();
 
-		$this->load->view('admin/barang', $data);
+		$this->load->view('admin/d_Barang', $data);
 	}
 
 	public function simpan(){
