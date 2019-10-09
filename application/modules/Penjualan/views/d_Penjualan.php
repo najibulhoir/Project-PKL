@@ -346,7 +346,7 @@
                         <br>
         
                &emsp;&nbsp;
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Unduh</button>
                                     
                         <div class="panel-body">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -359,7 +359,7 @@
                                             <!-- heading modal -->
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Tambahkan Data</h4>
+                                                <h4 class="modal-title">Tambahkan Pegawai</h4>
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
@@ -389,11 +389,6 @@
                                                 <label>Harga</label>
                                                 <input type="text" class="form-control">
                                             </div>      
-
-                                            <div class="form-group">
-                                                <label>Diskon</label>
-                                                <input type="text" class="form-control">
-                                            </div>      
                                                                         
                                             
                                             <button type="submit" class="btn btn-primary">Simpan</button>
@@ -410,15 +405,15 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Kode Barang</th>
-                                        <th class="min-tablet">Nama Barang</th>
-                                        <th class="min-tablet">Kategori</th>
-                                        <th class="min-desktop">Foto</th>
-                                        <th class="min-desktop">Stok</th>
-                                        <th class="min-desktop">Harga</th>
-                                        <th>Diskon</th>
-                                        <th>Status</th>
-                                        <th> Aksi</th>
+                                        <th>Kode Penbelian</th>
+                                        <th class="min-tablet">Kode Pembayaran</th>
+                                        <th class="min-tablet">Jenis Pembayaran</th>
+                                        <th class="min-desktop">Nama Customer</th>
+                                        <th class="min-desktop">Nama Barang</th>
+                                        <th class="min-desktop">Tanggal Pengiriman</th>
+                                        <th class="min-desktop">Tanggal Pembelian</th>
+                                        <th class="min-desktop">Alamat</th>
+                                        <th class="min-desktop">Status Pembayaran</th>
                                     </tr>
                                 </thead>
                                 <tbody>

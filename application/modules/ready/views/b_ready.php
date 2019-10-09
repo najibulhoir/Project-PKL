@@ -343,80 +343,20 @@
                     <!-- Basic Data Tables -->
                     <!--===================================================-->
                     <div class="panel">
-                        <br>
         
-               &emsp;&nbsp;
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
-                                    
                         <div class="panel-body">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                                                 <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-
-                                        <!-- konten modal-->
-                                        <div class="modal-content">
-                                            <!-- heading modal -->
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Tambahkan Data</h4>
-                                            </div>
-                                            <!-- body modal -->
-                                            <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label>kode Barang</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Nama Barang</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>      
-                                            <div class="form-group">
-                                                <label>Kategori</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>      
-                                            <div class="form-group">
-                                                <label>Foto</label>
-                                                <input type="file" class="form-control" id="alamat">
-                                            </div>      
-                                            <div class="form-group">
-                                                <label>Stok</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Harga</label>
-                                                <input type="text" class="form-control">
-                                            </div>      
-
-                                            <div class="form-group">
-                                                <label>Diskon</label>
-                                                <input type="text" class="form-control">
-                                            </div>      
-                                                                        
-                                            
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
-                                        </form>
-                                            </div>
-                                            <!-- footer modal -->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                             </div>
+                                    
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Kode Barang</th>
-                                        <th class="min-tablet">Nama Barang</th>
-                                        <th class="min-tablet">Kategori</th>
-                                        <th class="min-desktop">Foto</th>
-                                        <th class="min-desktop">Stok</th>
-                                        <th class="min-desktop">Harga</th>
-                                        <th>Diskon</th>
+                                        <th>Nama</th>
+                                        <th>Tempat Lahir</th>
+                                        <th class="min-tablet">Tanggal Lahir</th>
+                                        <th class="min-tablet">Email</th>
+                                        <th class="min-desktop">Password</th>
+                                        <th class="min-desktop">Telepon</th>
+                                        <th class="min-desktop">Alamat</th>
+                                        <th>Foto</th>
                                         <th>Status</th>
                                         <th> Aksi</th>
                                     </tr>
