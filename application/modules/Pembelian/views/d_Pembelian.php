@@ -348,6 +348,21 @@
                &emsp;&nbsp;
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Unduh</button>
 
+            <div class="container-fluid" style="padding-top:20px">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="<?php echo base_url('assets/gambar-1.png') ?>" alt="class="img-responsive" width="100%">
+                            <a href="<?php echo base_url() . 'index.php/download/get_download'; ?>"class="btn btn-primary center-block"> Download </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
                         <div class="panel-body">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                                                  <!-- Modal -->
