@@ -34,6 +34,7 @@
         			<input type="hidden" class="harga-value" value="<?php echo $data->harga; ?>">
 					<input type="hidden" class="diskon-value" value="<?php echo $data->diskon; ?>">
 				</td>
+				
 				<td class="align-middle text-center">
 					<a href="javascript:void();" data-id="<?php echo $data->kd_barang; ?>" data-toggle="modal" data-target="#delete-modal" class="btn btn-danger btn-alert-hapus"><span class="glyphicon glyphicon-erase"></span></a>
 				</td>
