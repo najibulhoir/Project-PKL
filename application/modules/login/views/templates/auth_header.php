@@ -14,15 +14,15 @@
 
 
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
-    <link href="<?= base_url('assets/adminlte') ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/adminlte/css/bootstrap.min.css') ?>" rel="stylesheet">
 
 
     <!--Nifty Stylesheet [ REQUIRED ]-->
-    <link href="<?= base_url('assets/adminlte') ?>css/nifty.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/adminlte/css/nifty.min.css') ?>" rel="stylesheet">
 
 
     <!--Nifty Premium Icon [ DEMONSTRATION ]-->
-    <link href="<?= base_url('assets/adminlte') ?>css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/adminlte/css/demo/nifty-demo-icons.min.css') ?>" rel="stylesheet">
 
 
     <!--=================================================-->
@@ -30,13 +30,13 @@
 
 
     <!--Pace - Page Load Progress Par [OPTIONAL]-->
-    <link href="<?= base_url('assets/adminlte') ?>plugins/pace/pace.min.css" rel="stylesheet">
-    <script src="<?= base_url('assets/adminlte') ?>plugins/pace/pace.min.js"></script>
+    <link href="<?= base_url('assets/adminlte/plugins/pace/pace.min.cs') ?>" rel="stylesheet">
+    <script src="<?= base_url('assets/adminlte/plugins/pace/pace.min.js') ?>"></script>
 
 
 
     <!--Demo [ DEMONSTRATION ]-->
-    <link href="<?= base_url('assets/adminlte') ?>css/demo/nifty-demo.min.css" rel="stylesheet">
+    <link href="<?= base_url('assets/adminlte/css/demo/nifty-demo.min.css') ?>" rel="stylesheet">
 
 
     <!--=================================================
