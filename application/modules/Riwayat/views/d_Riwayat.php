@@ -359,7 +359,7 @@
                                             <!-- heading modal -->
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Tambahkan Pembelian</h4>
+                                                <h4 class="modal-title">Tambahkan Pegawai</h4>
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
@@ -405,12 +405,12 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Kode Pembelian</th>
-                                        <th class="min-tablet">Nama Customer</th>
+                                        <th>Kode Barang</th>
                                         <th class="min-tablet">Nama Barang</th>
-                                        <th class="min-desktop">Jumlah</th>
-                                        <th class="min-desktop">Ongkir</th>
-                                        <th class="min-desktop">SubHarga</th>
+                                        <th class="min-tablet">Kategori</th>
+                                        <th class="min-desktop">Foto</th>
+                                        <th class="min-desktop">Stok</th>
+                                        <th class="min-desktop">Diskon</th>
                                     </tr>
                                 </thead>
                                 <tbody>
