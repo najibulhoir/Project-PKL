@@ -343,20 +343,20 @@
                     <!-- Basic Data Tables -->
                     <!--===================================================-->
                     <div class="panel">
-        
+    
                         <div class="panel-body">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                    
+        
                                 <thead>
                                     <tr>
-                                        <th>Nama</th>
-                                        <th>Tempat Lahir</th>
-                                        <th class="min-tablet">Tanggal Lahir</th>
-                                        <th class="min-tablet">Email</th>
-                                        <th class="min-desktop">Password</th>
-                                        <th class="min-desktop">Telepon</th>
-                                        <th class="min-desktop">Alamat</th>
-                                        <th>Foto</th>
+                                        <th>No</th>
+                                        <th>Kode Barang</th>
+                                        <th class="min-tablet">Nama Barang</th>
+                                        <th class="min-tablet">Kategori</th>
+                                        <th class="min-desktop">Foto</th>
+                                        <th class="min-desktop">Stok</th>
+                                        <th class="min-desktop">Harga</th>
+                                        <th>Diskon</th>
                                         <th>Status</th>
                                         <th> Aksi</th>
                                     </tr>
