@@ -681,7 +681,7 @@
 
                                 <!--Menu list item-->
                     <li >
-                        <a href="#">
+                        <a href="">
                             <i class="glyphicon glyphicon-book"></i>
                             <span class="menu-title">Data Toko</span>
                   <i class="arrow"></i>
@@ -689,15 +689,15 @@
 
                         <!--Submenu-->
                         <ul class="collapse">
-                           <li><a href=""><i class="fa fa-edit"></i>
+                           <li><a href="<?= base_url().'toko' ?>"><i class="fa fa-edit"></i>
                            <span class="menu-title">Informasi Toko
-                           <li><a href=""><i class="fa fa-edit"></i>Faqs</a></li>
+                           <li><a href="<?= base_url().'faqs' ?>"><i class="fa fa-edit"></i>Faqs</a></li>
                         </ul>
                     </li>
 
                     <!--Menu item-->
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="<?= base_url().'Barang' ?>">
                                         <i class="fa fa-file"></i>
                                         <span class="menu-title">
                                             Data Barang
@@ -730,7 +730,7 @@
 
                        <!--Menu item-->
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="<?= base_url().'pegawai' ?>">
                                         <i class="fa fa-file"></i>
                                         <span class="menu-title">
                                             Data Pegawai
@@ -756,7 +756,7 @@
                                 </li>
                                  <!--Menu item-->
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="<?= base_url().'kritik' ?>">
                                         <i class="fa fa-wechat"></i>
                                         <span class="menu-title">
                                             Kritik & Saran
