@@ -6,21 +6,21 @@ class Barang extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 
-		$this->load->model('SiswaModel'); // Load SiswaModel ke controller ini
+		$this->load->model('Barang'); // Load SiswaModel ke controller ini
 	}
 
 	public function index(){
-		$data['model'] = $this->SiswaModel->view();
+		$data['barang'] = $this->Barang->view();
 
-		$this->load->view('siswa/index', $data);
+		$this->load->view('Barang', $data);
 	}
 
 	public function simpan(){
-		if($this->SiswaModel->validation("save")){ // Jika validasi sukses atau hasil validasi adalah true
-			$this->SiswaModel->save(); // Panggil fungsi save() yang ada di SiswaModel.php
+		if($this->Barang->validation("save")){ // Jika validasi sukses atau hasil validasi adalah true
+			$this->Barang->save(); // Panggil fungsi save() yang ada di SiswaModel.php
 
 			// Load ulang view.php agar data yang baru bisa muncul di tabel pada view.php
-			$html = $this->load->view('siswa/view', array('model'=>$this->SiswaModel->view()), true);
+			$html = $this->load->view('view', array('barang'=>$this->Barang->view()), true);
 
 			$callback = array(
 				'status'=>'sukses',
@@ -38,11 +38,11 @@ class Barang extends CI_Controller {
 	}
 
 	public function ubah($id){
-		if($this->SiswaModel->validation("update")){ // Jika validasi sukses atau hasil validasi adalah true
-			$this->SiswaModel->edit($id); // Panggil fungsi edit() yang ada di SiswaModel.php
+		if($this->Barang->validation("update")){ // Jika validasi sukses atau hasil validasi adalah true
+			$this->Barang->edit($id); // Panggil fungsi edit() yang ada di SiswaModel.php
 
 			// Load ulang view.php agar data yang baru bisa muncul di tabel pada view.php
-			$html = $this->load->view('siswa/view', array('model'=>$this->SiswaModel->view()), true);
+			$html = $this->load->view('view', array('barang'=>$this->Barang->view()), true);
 
 			$callback = array(
 				'status'=>'sukses',
@@ -60,10 +60,10 @@ class Barang extends CI_Controller {
 	}
 
 	public function hapus($id){
-		$this->SiswaModel->delete($id); // Panggil fungsi delete() yang ada di SiswaModel.php
+		$this->Barang->delete($id); // Panggil fungsi delete() yang ada di SiswaModel.php
 
 		// Load ulang view.php agar data yang baru bisa muncul di tabel pada view.php
-		$html = $this->load->view('siswa/view', array('model'=>$this->SiswaModel->view()), true);
+		$html = $this->load->view('view', array('barang'=>$this->Barang->view()), true);
 		
 		$callback = array(
 			'status'=>'sukses',

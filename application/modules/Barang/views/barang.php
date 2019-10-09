@@ -1,6 +1,6 @@
 
 	<!-- Load File bootstrap.min.css yang ada difolder css -->
-	<link href="<?= base_url('css/bootstrap.min.css') ?>" rel="stylesheet">
+	<link href="<?= base_url('assets/adminlte/css/bootstrap.min.css') ?>" rel="stylesheet">
 
 
 	<style>
@@ -29,7 +29,7 @@
     -- yang ada pada tabel siswa di database
     -->
     <div id="view" style="margin: 10px 20px;">
-        <?php $this->load->view('admin/view', array('model'=>$barang)); // Load file view.php dan kirim data siswanya ?>
+        <?php $this->load->view('view', array('model'=>$barang)); // Load file view.php dan kirim data siswanya ?>
     </div>
 
     <!--
@@ -132,12 +132,12 @@
     </div>
 
     <!-- Load File jquery.min.js yang ada difolder js -->
-    <script src="<?= base_url('js/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('assets/adminlte/js/jquery.min.js') ?>"></script>
 
     <!-- Load File bootstrap.min.js yang ada difolder js -->
-    <script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('assets/adminlte/js/bootstrap.min.js') ?>"></script>
 
     <!-- Load file ajax.js yang ada di folder js -->
-    <script src="<?= base_url('js/custom.js') ?>"></script>
+    <script src="<?= base_url('assets/adminlte/js/custom.js') ?>"></script>
 </body>
 </html>

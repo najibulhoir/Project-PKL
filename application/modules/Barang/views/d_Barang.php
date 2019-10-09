@@ -459,7 +459,7 @@
                             </p>
 					    </div>
 					    <div class="panel-body">
-                        <?php $this->load->view('admin/barang');?>
+                        <?php $this->load->view('Barang');?>
 					        <!-- <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
 					            <thead>
 					                <tr>
