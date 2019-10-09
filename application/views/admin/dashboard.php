@@ -789,7 +789,7 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse in">
-						                    <li class="active-link"><a href=<?php echo base_url('Dashboard/Barang') ?>>Data Barang</a></li>
+						                    <li class="active-link"><a href=<?php echo base_url('Databarang') ?>>Data Barang</a></li>
 
 											<li><a href="dashboard-2.html">Riwayat Barang</a></li>
 											<li><a href="dashboard-3.html">Barang Masuk</a></li>

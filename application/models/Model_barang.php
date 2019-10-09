@@ -3,7 +3,7 @@
 class Model_barang extends CI_Model {
 	// Fungsi untuk menampilkan semua data siswa
 	public function view(){
-		return $this->db->get('siswa')->result();
+		return $this->db->get('tm_barang')->result();
 	}
 
 	// Fungsi untuk validasi form tambah dan ubah
@@ -14,12 +14,13 @@ class Model_barang extends CI_Model {
 		// Karena ketika update, NIS tidak harus divalidasi
 		// Jadi NIS di validasi hanya ketika menambah data siswa saja
 		if($mode == "save")
-			$this->form_validation->set_rules('input_nis', 'NIS', 'required|numeric|max_length[11]');
+		$this->form_validation->set_rules('input_kd_barang', 'kd_barang', 'required|numeric|max_length[11]');
 
-		$this->form_validation->set_rules('input_nama', 'Nama', 'required|max_length[50]');
-		$this->form_validation->set_rules('input_jeniskelamin', 'Jenis Kelamin', 'required');
-		$this->form_validation->set_rules('input_telp', 'telp', 'required|numeric|max_length[15]');
-		$this->form_validation->set_rules('input_alamat', 'Alamat', 'required');
+		$this->form_validation->set_rules('input_nama_barang', 'Nama_barang', 'required');
+		$this->form_validation->set_rules('input_foto_barang', 'foto_barang', 'required');
+		$this->form_validation->set_rules('input_stok', 'stok', 'required');
+		$this->form_validation->set_rules('input_harga', 'harga', 'required');
+		$this->form_validation->set_rules('input_kd_diskon', 'kd_diskon', 'required');
 
 		if($this->form_validation->run()) // Jika validasi benar
 			return true; // Maka kembalikan hasilnya dengan TRUE
@@ -30,33 +31,35 @@ class Model_barang extends CI_Model {
 	// Fungsi untuk melakukan simpan data ke tabel siswa
 	public function save(){
 		$data = array(
-			"nis" => $this->input->post('input_nis'),
-			"nama" => $this->input->post('input_nama'),
-			"jenis_kelamin" => $this->input->post('input_jeniskelamin'),
-			"telp" => $this->input->post('input_telp'),
-			"alamat" => $this->input->post('input_alamat')
+			"kd_barang" => $this->input->post('input_kd_barang'),
+			"nama_barang" => $this->input->post('input_nama_barang'),
+			"foto_barang" => $this->input->post('input_foto_barang'),
+			"stok" => $this->input->post('input_stok'),
+			"harga" => $this->input->post('input_harga'),
+			"kd_diskon" => $this->input->post('input_kd_diskon')
 		);
 
-		$this->db->insert('siswa', $data); // Untuk mengeksekusi perintah insert data
+		$this->db->insert('tm_barang', $data); // Untuk mengeksekusi perintah insert data
 	}
 
 	// Fungsi untuk melakukan ubah data siswa berdasarkan ID siswa
 	public function edit($id){
 		$data = array(
-			"nis" => $this->input->post('input_nis'),
-			"nama" => $this->input->post('input_nama'),
-			"jenis_kelamin" => $this->input->post('input_jeniskelamin'),
-			"telp" => $this->input->post('input_telp'),
-			"alamat" => $this->input->post('input_alamat')
+			"kd_barang" => $this->input->post('input_kd_barang'),
+			"nama_barang" => $this->input->post('input_nama_barang'),
+			"foto_barang" => $this->input->post('input_foto_barang'),
+			"stok" => $this->input->post('input_stok'),
+			"harga" => $this->input->post('input_harga'),
+			"kd_diskon" => $this->input->post('input_kd_diskon')
 		);
 
-		$this->db->where('id', $id);
-		$this->db->update('siswa', $data); // Untuk mengeksekusi perintah update data
+		$this->db->where('kd_barang', $kd_barang);
+		$this->db->update('tm_barang', $data); // Untuk mengeksekusi perintah update data
 	}
 
 	// Fungsi untuk melakukan menghapus data siswa berdasarkan ID siswa
 	public function delete($id){
-		$this->db->where('id', $id);
-		$this->db->delete('siswa'); // Untuk mengeksekusi perintah delete data
+		$this->db->where('kd_barang', $id);
+		$this->db->delete('tm_barang'); // Untuk mengeksekusi perintah delete data
 	}
 }

@@ -53,6 +53,7 @@
     <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
 	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
+<<<<<<< HEAD
 
     <!--=================================================
 
@@ -80,6 +81,12 @@
 
     =================================================-->
 
+=======
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/adminlte/css/bootstrap.css">
+    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/bootstrap.js"></script>  
+        
+>>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
 </head>
 
 <!--TIPS-->
@@ -334,16 +341,83 @@
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
 
 					<!-- Basic Data Tables -->
 					<!--===================================================-->
 					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Data Pegawai</h3>
-					    </div>
-
+                        <br>
+		
+               &emsp;&nbsp;
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
+            					    
 					    <div class="panel-body">
 					        <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                                                 <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                                        <!-- konten modal-->
+                                        <div class="modal-content">
+                                            <!-- heading modal -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Tambahkan Pegawai</h4>
+                                            </div>
+                                            <!-- body modal -->
+                                            <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Nama</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tempat Lahir</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Tanggal Lahir</label>
+                                                <input type="date" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Telepon</label>
+                                                <input type="text" class="form-control">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Alamat</label>
+                                                <input type="text" class="form-control">
+                                            </div>                                  
+                                            <div class="form-group">
+                                                <label>Foto</label>
+                                                <input type="file" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Status</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                        </form>
+                                            </div>
+                                            <!-- footer modal -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
 					            <thead>
 					                <tr>
 					                    <th>Nama</th>
@@ -363,13 +437,10 @@
 					                    <th></th>
 					                    <th></th>
 					                    <th></th>
-					                    <th> </th>
-					                    <th> </th>
-					                    <th> </th>
-					                    <th> </th>
 					                    <th></th>
 					                    <th></th>
 					                    <th></th>
+<<<<<<< HEAD
 					                </tr>
 
 					            </tbody>
@@ -408,17 +479,33 @@
 					<!--===================================================-->
 					<!-- End Striped Table -->
 
+=======
+					                    <th></th>
+					                    <th></th>
+					                    <th></th>
+					                    <th></th>
+					                </tr>		         
+					            </tbody>
+					        </table>
+						   </div>
+					    </div>
+					</div>								
+					<!--===================================================-->
+					<!-- End Striped Table -->				
+>>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
 
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
-
             </div>
             <!--===================================================-->
             <!--END CONTENT CONTAINER-->
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
             <!--ASIDE-->
             <!--===================================================-->
             <aside id="aside-container">
