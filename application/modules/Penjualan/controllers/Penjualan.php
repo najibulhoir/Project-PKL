@@ -1,7 +1,7 @@
- <?php
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class pembelian extends CI_Controller{
+class Penjualan extends CI_Controller{
 
   public function __construct()
   {
@@ -11,6 +11,6 @@ class pembelian extends CI_Controller{
 
   function index()
   {
-    $this->load->view('d_Barang.php');
+    $this->load->view('d_Penjualan.php');
   }
 }

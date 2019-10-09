@@ -51,7 +51,7 @@
 
     <!--DataTables [ OPTIONAL ]-->
     <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
-	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
     <!--=================================================
 
@@ -325,9 +325,9 @@
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <ol class="breadcrumb">
-					<li><a href="#"><i class="demo-pli-home"></i></a></li>
-					<li><a href="#">Tables</a></li>
-					<li class="active">Data Tables</li>
+                    <li><a href="#"><i class="demo-pli-home"></i></a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li class="active">Data Tables</li>
                     </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
@@ -346,7 +346,7 @@
                         <br>
         
                &emsp;&nbsp;
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Unduh</button>
                                     
                         <div class="panel-body">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -359,21 +359,21 @@
                                             <!-- heading modal -->
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Tambahkan Barang</h4>
+                                                <h4 class="modal-title">Tambahkan Pegawai</h4>
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
                                         <form>
                                             <div class="form-group">
-                                                <label>Kode Barang</label>
+                                                <label>kode Barang</label>
                                                 <input type="text" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label>Kategori</label>
+                                                <label>Nama Barang</label>
                                                 <input type="text" class="form-control" id="alamat">
                                             </div>      
                                             <div class="form-group">
-                                                <label>Nama Barang</label>
+                                                <label>Kategori</label>
                                                 <input type="text" class="form-control" id="alamat">
                                             </div>      
                                             <div class="form-group">
@@ -389,10 +389,8 @@
                                                 <label>Harga</label>
                                                 <input type="text" class="form-control">
                                             </div>      
-                                            <div class="form-group">
-                                                <label>Diskon</label>
-                                                <input type="text" class="form-control">
-                                            </div>                                 
+                                                                        
+                                            
                                             <button type="submit" class="btn btn-primary">Simpan</button>
                                         </form>
                                             </div>
@@ -407,15 +405,15 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Kode Barang</th>
-                                        <th class="min-tablet">Kategori</th>
-                                        <th class="min-tablet">Nama Barang</th>
-                                        <th class="min-desktop">Foto</th>
-                                        <th class="min-desktop">Stok</th>
-                                        <th class="min-desktop">Harga</th>
-                                        <th>Diskon</th>
-                                        <th>aksi</th>
-                                        
+                                        <th>Kode Penbelian</th>
+                                        <th class="min-tablet">Kode Pembayaran</th>
+                                        <th class="min-tablet">Jenis Pembayaran</th>
+                                        <th class="min-desktop">Nama Customer</th>
+                                        <th class="min-desktop">Nama Barang</th>
+                                        <th class="min-desktop">Tanggal Pengiriman</th>
+                                        <th class="min-desktop">Tanggal Pembelian</th>
+                                        <th class="min-desktop">Alamat</th>
+                                        <th class="min-desktop">Status Pembayaran</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -490,64 +488,64 @@
 
                                     <!--Family-->
                                     <div class="list-group bg-trans">
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
-												<i class="badge badge-success badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Stephen Tran</p>
-							                    <small class="text-muteds">Availabe</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Brittany Meyer</p>
-							                    <small class="text-muteds">I think so</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
-												<i class="badge badge-info badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Jack George</p>
-							                    <small class="text-muteds">Last Seen 2 hours ago</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Donald Brown</p>
-							                    <small class="text-muteds">Lorem ipsum dolor sit amet.</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
-												<i class="badge badge-warning badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Betty Murphy</p>
-							                    <small class="text-muteds">Idle</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
-												<i class="badge badge-danger badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Samantha Reid</p>
-							                    <small class="text-muteds">Offline</small>
-							                </div>
-							            </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
+                                                <i class="badge badge-success badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Stephen Tran</p>
+                                                <small class="text-muteds">Availabe</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Brittany Meyer</p>
+                                                <small class="text-muteds">I think so</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
+                                                <i class="badge badge-info badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Jack George</p>
+                                                <small class="text-muteds">Last Seen 2 hours ago</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Donald Brown</p>
+                                                <small class="text-muteds">Lorem ipsum dolor sit amet.</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
+                                                <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Betty Murphy</p>
+                                                <small class="text-muteds">Idle</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
+                                                <i class="badge badge-danger badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Samantha Reid</p>
+                                                <small class="text-muteds">Offline</small>
+                                            </div>
+                                        </a>
                                     </div>
 
                                     <hr>
@@ -812,36 +810,36 @@
 
                                 <ul id="mainnav-menu" class="list-group">
 
-						            <!--Category name-->
-						            <li class="list-header">Navigation</li>
-
-						            <!--Menu list item-->
-						            <li class="active-sub">
-						                <a href="<?= base_url().'Dashboard' ?>">
-						                    <i class="fa fa-home"></i>
-						                    <span class="menu-title">
-												Beranda
-											</span>
-						                </a>
-						            </li>
+                                    <!--Category name-->
+                                    <li class="list-header">Navigation</li>
 
                                     <!--Menu list item-->
-						            <li >
-						                <a href="#">
-						                    <i class="glyphicon glyphicon-book"></i>
-						                    <span class="menu-title">Data Toko</span>
-											<i class="arrow"></i>
-						                </a>
+                                    <li class="active-sub">
+                                        <a href="<?= base_url().'Dashboard' ?>">
+                                            <i class="fa fa-home"></i>
+                                            <span class="menu-title">
+                                                Beranda
+                                            </span>
+                                        </a>
+                                    </li>
 
-						                <!--Submenu-->
-						                <ul class="collapse">
-						                   <li><a href=""><i class="fa fa-edit"></i>
+                                    <!--Menu list item-->
+                                    <li >
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-book"></i>
+                                            <span class="menu-title">Data Toko</span>
+                                            <i class="arrow"></i>
+                                        </a>
+
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                           <li><a href=""><i class="fa fa-edit"></i>
                                <span class="menu-title">Informasi Toko
-						                   <li><a href=""><i class="fa fa-edit"></i>Faqs</a></li>
-						                </ul>
-						            </li>
+                                           <li><a href=""><i class="fa fa-edit"></i>Faqs</a></li>
+                                        </ul>
+                                    </li>
 
-						            <!--Menu item-->
+                                    <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
                                             <i class="fa fa-file"></i>
@@ -863,7 +861,7 @@
                                         </a>
                                     </li>
 
-						             <!--Menu item-->
+                                     <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
                                             <i class="glyphicon glyphicon-list-alt"></i>
@@ -874,7 +872,7 @@
                                         </a>
                                     </li>
 
-						               <!--Menu item-->
+                                       <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
                                             <i class="fa fa-file"></i>
@@ -895,11 +893,11 @@
 
                                         <!--Submenu-->
                                         <ul class="collapse">
-            						                   <li><a href=""><i class="fa fa-book"></i>
+                                                       <li><a href=""><i class="fa fa-book"></i>
                                            <span class="menu-title">Penjualan
-            						                   <li><a href=""><i class="fa fa-book"></i>Pembelian</a></li>
-            						                </ul>
-            						            </li>
+                                                       <li><a href=""><i class="fa fa-book"></i>Pembelian</a></li>
+                                                    </ul>
+                                                </li>
                                      <!--Menu item-->
                                     <li>
                                         <a href="widgets.html">
@@ -943,7 +941,7 @@
                 14GB of <strong>512GB</strong> Free.
             </div>
 
-	-->
+    -->
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
@@ -997,8 +995,8 @@
 
     <!--DataTables [ OPTIONAL ]-->
     <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/jquery.dataTables.js"></script>
-	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
-	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+    <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+    <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
 
 
     <!--DataTables Sample [ SAMPLE ]-->
