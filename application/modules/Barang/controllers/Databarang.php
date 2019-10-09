@@ -12,7 +12,7 @@ class Databarang extends CI_Controller {
 	public function index(){
 		$data['barang'] = $this->Barang->view();
 
-		$this->load->view('admin/d_Barang', $data);
+		$this->load->view('Databarang', $data);
 	}
 
 	public function simpan(){
@@ -20,7 +20,7 @@ class Databarang extends CI_Controller {
 			$this->Barang->save(); // Panggil fungsi save() yang ada di SiswaModel.php
 
 			// Load ulang view.php agar data yang baru bisa muncul di tabel pada view.php
-			$html = $this->load->view('admin/view', array('barang'=>$this->Barang->view()), true);
+			$html = $this->load->view('view', array('barang'=>$this->Barang->view()), true);
 
 			$callback = array(
 				'status'=>'sukses',
@@ -42,7 +42,7 @@ class Databarang extends CI_Controller {
 			$this->Barang->edit($id); // Panggil fungsi edit() yang ada di SiswaModel.php
 
 			// Load ulang view.php agar data yang baru bisa muncul di tabel pada view.php
-			$html = $this->load->view('admin/view', array('barang'=>$this->Barang->view()), true);
+			$html = $this->load->view('view', array('barang'=>$this->Barang->view()), true);
 
 			$callback = array(
 				'status'=>'sukses',
@@ -63,7 +63,7 @@ class Databarang extends CI_Controller {
 		$this->Barang->delete($id); // Panggil fungsi delete() yang ada di SiswaModel.php
 
 		// Load ulang view.php agar data yang baru bisa muncul di tabel pada view.php
-		$html = $this->load->view('admin/view', array('barang'=>$this->Barang->view()), true);
+		$html = $this->load->view('view', array('barang'=>$this->Barang->view()), true);
 		
 		$callback = array(
 			'status'=>'sukses',
