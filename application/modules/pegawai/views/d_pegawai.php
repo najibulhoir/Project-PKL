@@ -53,32 +53,9 @@
     <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
 	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
-    
-    <!--=================================================
-
-    REQUIRED
-    You must include this in your project.
-
-
-    RECOMMENDED
-    This category must be included but you may modify which plugins or components which should be included in your project.
-
-
-    OPTIONAL
-    Optional plugins. You may choose whether to include it in your project or not.
-
-
-    DEMONSTRATION
-    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
-
-
-    SAMPLE
-    Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
-
-
-    Detailed information and more samples can be found in the document.
-
-    =================================================-->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/adminlte/css/bootstrap.css">
+    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/bootstrap.js"></script>  
         
 </head>
 
@@ -335,15 +312,79 @@
                 <!--===================================================-->
                 <div id="page-content">
                     
+
 					<!-- Basic Data Tables -->
 					<!--===================================================-->
 					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Data Pegawai</h3>
-					    </div>
-
+                        <br>
+		
+               &emsp;&nbsp;
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
+            					    
 					    <div class="panel-body">
 					        <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                                                 <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                                        <!-- konten modal-->
+                                        <div class="modal-content">
+                                            <!-- heading modal -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Tambahkan Pegawai</h4>
+                                            </div>
+                                            <!-- body modal -->
+                                            <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Nama</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tempat Lahir</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Tanggal Lahir</label>
+                                                <input type="date" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Telepon</label>
+                                                <input type="text" class="form-control">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Alamat</label>
+                                                <input type="text" class="form-control">
+                                            </div>                                  
+                                            <div class="form-group">
+                                                <label>Foto</label>
+                                                <input type="file" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Status</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                        </form>
+                                            </div>
+                                            <!-- footer modal -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
 					            <thead>
 					                <tr>
 					                    <th>Nama</th>
@@ -363,62 +404,30 @@
 					                    <th></th>
 					                    <th></th>
 					                    <th></th>
-					                    <th> </th>
-					                    <th> </th>
-					                    <th> </th>
-					                    <th> </th>
 					                    <th></th>
 					                    <th></th>
 					                    <th></th>
-					                </tr>
-					         
+					                    <th></th>
+					                    <th></th>
+					                    <th></th>
+					                    <th></th>
+					                </tr>		         
 					            </tbody>
 					        </table>
-
-					        <!-- Tombol untuk menampilkan modal-->
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
-						 
-							<!-- Modal -->
-							<div id="myModal" class="modal fade" role="dialog">
-								<div class="modal-dialog">
-									<!-- konten modal-->
-									<div class="modal-content">
-										<!-- heading modal -->
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Tambah Pegawai</h4>
-										</div>
-										<!-- body modal -->
-										<div class="modal-body">
-										
-										</div>
-										<!-- footer modal -->
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Tutup Modal</button>
-										</div>
-									</div>
-								</div>
-							</div>
 						   </div>
 					    </div>
-					</div>
-
-
-									
+					</div>								
 					<!--===================================================-->
-					<!-- End Striped Table -->
-					
-					
+					<!-- End Striped Table -->				
+
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
-
             </div>
             <!--===================================================-->
             <!--END CONTENT CONTAINER-->
 
 
-            
             <!--ASIDE-->
             <!--===================================================-->
             <aside id="aside-container">
