@@ -708,7 +708,7 @@
 
                                  <!--Menu item-->
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="<?= base_url().'riwayat' ?>">
                                         <i class="fa fa-history"></i>
                                         <span class="menu-title">
                                             Riwayat Barang
@@ -719,7 +719,7 @@
 
                      <!--Menu item-->
                                 <li>
-                                    <a href="widgets.html">
+                                    <a href="<?= base_url().'ready' ?>">
                                         <i class="glyphicon glyphicon-list-alt"></i>
                                         <span class="menu-title">
                                             Barang Ready
@@ -749,9 +749,9 @@
 
                                     <!--Submenu-->
                                     <ul class="collapse">
-                                       <li><a href=""><i class="fa fa-book"></i>
+                                       <li><a href="<?= base_url().'Penjualan' ?>"><i class="fa fa-book"></i>
                                        <span class="menu-title">Penjualan
-                                       <li><a href=""><i class="fa fa-book"></i>Pembelian</a></li>
+                                       <li><a href="<?= base_url().'Pembelian' ?>"><i class="fa fa-book"></i>Pembelian</a></li>
                                     </ul>
                                 </li>
                                  <!--Menu item-->
