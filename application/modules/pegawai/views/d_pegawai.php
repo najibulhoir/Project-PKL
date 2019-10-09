@@ -53,8 +53,6 @@
     <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
 	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
 
-<<<<<<< HEAD
-
     <!--=================================================
 
     REQUIRED
@@ -81,12 +79,11 @@
 
     =================================================-->
 
-=======
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/adminlte/css/bootstrap.css">
     <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/jquery.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/bootstrap.js"></script>  
         
->>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
+
 </head>
 
 <!--TIPS-->
@@ -338,24 +335,21 @@
                 </div>
 
 
-                <!--Page content-->
+                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
-<<<<<<< HEAD
-=======
                     
->>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
 
-					<!-- Basic Data Tables -->
-					<!--===================================================-->
-					<div class="panel">
+                    <!-- Basic Data Tables -->
+                    <!--===================================================-->
+                    <div class="panel">
                         <br>
-		
+        
                &emsp;&nbsp;
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
-            					    
-					    <div class="panel-body">
-					        <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                    
+                        <div class="panel-body">
+                            <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                                                  <!-- Modal -->
                 <div id="myModal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -418,81 +412,40 @@
                                     </div>
                                 </div>
                              </div>
-					            <thead>
-					                <tr>
-					                    <th>Nama</th>
-					                    <th>Tempat Lahir</th>
-					                    <th class="min-tablet">Tanggal Lahir</th>
-					                    <th class="min-tablet">Email</th>
-					                    <th class="min-desktop">Password</th>
-					                    <th class="min-desktop">Telepon</th>
-					                    <th class="min-desktop">Alamat</th>
-					                    <th>Foto</th>
-					                    <th>Status</th>
-					                    <th> Aksi</th>
-					                </tr>
-					            </thead>
-					            <tbody>
-					            	<tr>
-					                    <th></th>
-					                    <th></th>
-					                    <th></th>
-					                    <th></th>
-					                    <th></th>
-					                    <th></th>
-<<<<<<< HEAD
-					                </tr>
-
-					            </tbody>
-					        </table>
-
-					        <!-- Tombol untuk menampilkan modal-->
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
-
-							<!-- Modal -->
-							<div id="myModal" class="modal fade" role="dialog">
-								<div class="modal-dialog">
-									<!-- konten modal-->
-									<div class="modal-content">
-										<!-- heading modal -->
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Tambah Pegawai</h4>
-										</div>
-										<!-- body modal -->
-										<div class="modal-body">
-
-										</div>
-										<!-- footer modal -->
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Tutup Modal</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						   </div>
-					    </div>
-					</div>
-
-
-
-					<!--===================================================-->
-					<!-- End Striped Table -->
-
-=======
-					                    <th></th>
-					                    <th></th>
-					                    <th></th>
-					                    <th></th>
-					                </tr>		         
-					            </tbody>
-					        </table>
-						   </div>
-					    </div>
-					</div>								
-					<!--===================================================-->
-					<!-- End Striped Table -->				
->>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
+                                <thead>
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>Tempat Lahir</th>
+                                        <th class="min-tablet">Tanggal Lahir</th>
+                                        <th class="min-tablet">Email</th>
+                                        <th class="min-desktop">Password</th>
+                                        <th class="min-desktop">Telepon</th>
+                                        <th class="min-desktop">Alamat</th>
+                                        <th>Foto</th>
+                                        <th>Status</th>
+                                        <th> Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>                
+                                </tbody>
+                            </table>
+                           </div>
+                        </div>
+                    </div>                              
+                    <!--===================================================-->
+                    <!-- End Striped Table -->              
 
                 </div>
                 <!--===================================================-->
@@ -501,11 +454,6 @@
             <!--===================================================-->
             <!--END CONTENT CONTAINER-->
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 32173b7de2c2fc5268728277e1b010578adc9122
             <!--ASIDE-->
             <!--===================================================-->
             <aside id="aside-container">
