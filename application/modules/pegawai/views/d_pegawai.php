@@ -19,6 +19,9 @@
     <!--Open Sans Font [ OPTIONAL ]-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!--Bootstrap Stylesheet [ REQUIRED ]-->
     <link href="<?php echo base_url();?>assets/adminlte/css/bootstrap.min.css" rel="stylesheet">
@@ -788,71 +791,102 @@
 						            <!--Menu list item-->
 						            <li class="active-sub">
 						                <a href="<?= base_url().'Dashboard' ?>">
-						                    <i class="demo-pli-gear"></i>
+						                    <i class="demo-pli-home"></i>
 						                    <span class="menu-title">
 												Beranda
 											</span>
 						                </a>
 						            </li>
 
+                                    <!--Menu list item-->
 						            <li >
 						                <a href="#">
-						                    <i class="demo-pli-home"></i>
-						                    <span class="menu-title">Barang</span>
+						                    <i class="fa fa-file"></i>
+						                    <span class="menu-title">Data Toko</span>
 											<i class="arrow"></i>
 						                </a>
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                   <li><a href="">Data Barang</a></li>
-						                   <li><a href="">Kategori</a></li>
-						                   <li><a href="">Barang Masuk</a></li>
-						                   <li><a href="">Barang Keluar</a></li>
+						                   <li><a href="">Informasi Toko </a></li>
+						                   <li><a href="">Faqs</a></li>
 						                </ul>			
 						            </li>
 						
-						            <!--Menu list item-->
-						            <li>
-						                <a href="#">
-						                    <i class="demo-pli-split-vertical-2"></i>
-						                    <span class="menu-title">Pegawai</span>
-											<i class="arrow"></i>
-						                </a>
-						
-						                <!--Submenu-->
-						                <ul class="collapse">
-						                    <li><a href="<?php echo base_url('Dashboard/pegawai') ?>">Data Pegawai</a></li>
-						                </ul>
-						            </li>
-						
-						            <!--Menu list item-->
-						            <li>
-						                <a href="widgets.html">
-						                    <i class="demo-pli-gear"></i>
-						                    <span class="menu-title">
-												Faqs
-												<span class="pull-right badge badge-warning"></span>
-											</span>
-						                </a>
-						            </li>
+						            <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="fa fa-file"></i>
+                                            <span class="menu-title">
+                                                Data Barang
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+						              
+                                     <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="demo-pli-gear"></i>
+                                            <span class="menu-title">
+                                                Riwayat Barang
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
 
-						               <li>
-						                <a href="widgets.html">
-						                    <i class="demo-pli-gear"></i>
-						                    <span class="menu-title">
-											Settings
-												<span class="pull-right badge badge-warning"></span>
-											</span>
-						                </a>
-						            </li>
-						
+						             <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="demo-pli-gear"></i>
+                                            <span class="menu-title">
+                                                Barang Ready
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
 
+						               <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="fa fa-file"></i>
+                                            <span class="menu-title">
+                                                Data Pegawai
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                     <!--Menu list item-->
+                                    <li >
+                                        <a href="#">
+                                            <i class="demo-pli-home"></i>
+                                            <span class="menu-title">Laporan</span>
+                                            <i class="arrow"></i>
+                                        </a>
+                        
+                                        <!--Submenu-->
+                                        <ul class="collapse">
+                                           <li><a href="">Penjualan </a></li>
+                                           <li><a href="">Pembelian</a></li>
+                                        </ul>           
+                                    </li>
+						              
+                                     <!--Menu item-->
+                                    <li>
+                                        <a href="widgets.html">
+                                            <i class="demo-pli-gear"></i>
+                                            <span class="menu-title">
+                                                Kritik & Saran
+                                                <span class="pull-right badge badge-warning"></span>
+                                            </span>
+                                        </a>
+                                    </li>
                             </div>
                         </div>
                     </div>
                     <!--================================-->
                     <!--End menu-->
-
                 </div>
             </nav>
 
