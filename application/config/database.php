@@ -78,7 +78,11 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
+<<<<<<< HEAD
+	'database' => 'e-commerce',
+=======
 	'database' => '',
+>>>>>>> c2415212c78be7ede335b9126de8d2fffaf4da6a
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

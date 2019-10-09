@@ -128,7 +128,7 @@ $(document).ready(function(){
 		$('#loading-hapus').show() // Munculkan loading hapus
 
 		$.ajax({
-			url: base_url + 'Databarang/hapus/' + id, // URL tujuan
+			url: base_url + 'Databarang/hapus/' + kd_barang, // URL tujuan
 			type: 'GET', // Tentukan type nya POST atau GET
 			dataType: 'json',
 			beforeSend: function(e) {
