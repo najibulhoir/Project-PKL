@@ -81,8 +81,8 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/adminlte/css/bootstrap.css">
     <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/jquery.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/bootstrap.js"></script>  
-        
+    <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/bootstrap.js"></script>
+
 
 </head>
 
@@ -338,16 +338,16 @@
                  <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
-                    
+
 
                     <!-- Basic Data Tables -->
                     <!--===================================================-->
                     <div class="panel">
                         <br>
-        
+
                &emsp;&nbsp;
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Balas</button>
-                                    
+
                         <div class="panel-body">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
                                                                  <!-- Modal -->
@@ -389,14 +389,14 @@
                                     <tr>
                                         <th></th>
                                         <th></th>
-                                    </tr>                
+                                    </tr>
                                 </tbody>
                             </table>
                            </div>
                         </div>
-                    </div>                              
+                    </div>
                     <!--===================================================-->
-                    <!-- End Striped Table -->              
+                    <!-- End Striped Table -->
 
                 </div>
                 <!--===================================================-->
@@ -775,108 +775,107 @@
 						            <li class="list-header">Navigation</li>
 
 						            <!--Menu list item-->
-						            <li class="active-sub">
-						                <a href="<?= base_url().'Dashboard' ?>">
-						                    <i class="fa fa-home"></i>
-						                    <span class="menu-title">
-												Beranda
-											</span>
-						                </a>
-						            </li>
+                        <li class="active-sub">
+                            <a href="<?= base_url().'Dashboard' ?>">
+                                <i class="fa fa-home"></i>
+                                <span class="menu-title">
+                                    Beranda
+                                </span>
+                            </a>
+                        </li>
 
-                                    <!--Menu list item-->
-						            <li >
-						                <a href="#">
-						                    <i class="glyphicon glyphicon-book"></i>
-						                    <span class="menu-title">Data Toko</span>
-											<i class="arrow"></i>
-						                </a>
+                        <!--Menu list item-->
+                        <li >
+                            <a href="<?= base_url().'toko' ?>">
+                                <i class="glyphicon glyphicon-book"></i>
+                                <span class="menu-title">Data Toko</span>
+                                <i class="arrow"></i>
+                            </a>
 
-						                <!--Submenu-->
-						                <ul class="collapse">
-						                   <li><a href=""><i class="fa fa-edit"></i>
-                               <span class="menu-title">Informasi Toko
-						                   <li><a href=""><i class="fa fa-edit"></i>Faqs</a></li>
-						                </ul>
-						            </li>
+                            <!--Submenu-->
+                            <ul class="collapse">
+                               <li><a href="<?= base_url().'toko' ?>"><i class="fa fa-edit"></i>
+                   <span class="menu-title">Informasi Toko
+                               <li><a href="<?= base_url().'faqs' ?>"><i class="fa fa-edit"></i>Faqs</a></li>
+                            </ul>
+                        </li>
 
-						            <!--Menu item-->
-                                    <li>
-                                        <a href="widgets.html">
-                                            <i class="fa fa-file"></i>
-                                            <span class="menu-title">
-                                                Data Barang
-                                                <span class="pull-right badge badge-warning"></span>
-                                            </span>
-                                        </a>
+                        <!--Menu item-->
+                        <li>
+                            <a href="<?= base_url().'barang' ?>">
+                                <i class="fa fa-file"></i>
+                                <span class="menu-title">
+                                    Data Barang
+                                    <span class="pull-right badge badge-warning"></span>
+                                </span>
+                            </a>
+                        </li>
+
+                         <!--Menu item-->
+                        <li>
+                            <a href="<?= base_url().'riwayat' ?>">
+                                <i class="fa fa-history"></i>
+                                <span class="menu-title">
+                                    Riwayat Barang
+                                    <span class="pull-right badge badge-warning"></span>
+                                </span>
+                            </a>
+                        </li>
+
+                         <!--Menu item-->
+                        <li>
+                            <a href="<?= base_url().'ready' ?>">
+                                <i class="glyphicon glyphicon-list-alt"></i>
+                                <span class="menu-title">
+                                    Barang Ready
+                                    <span class="pull-right badge badge-warning"></span>
+                                </span>
+                            </a>
+                        </li>
+
+                           <!--Menu item-->
+                        <li>
+                            <a href="<?= base_url().'pegawai' ?>">
+                                <i class="fa fa-file"></i>
+                                <span class="menu-title">
+                                    Data Pegawai
+                                    <span class="pull-right badge badge-warning"></span>
+                                </span>
+                            </a>
+                        </li>
+
+                         <!--Menu list item-->
+                        <li >
+                            <a href="<?= base_url().'penjualan' ?>">
+                                <i class="glyphicon glyphicon-book"></i>
+                                <span class="menu-title">Laporan</span>
+                                <i class="arrow"></i>
+                            </a>
+
+                            <!--Submenu-->
+                            <ul class="collapse">
+                                           <li><a href="<?= base_url().'penjualan' ?>"><i class="fa fa-book"></i>
+                               <span class="menu-title">Penjualan
+                                           <li><a href="<?= base_url().'pembelian' ?>"><i class="fa fa-book"></i>Pembelian</a></li>
+                                        </ul>
                                     </li>
-
-                                     <!--Menu item-->
-                                    <li>
-                                        <a href="widgets.html">
-                                            <i class="fa fa-history"></i>
-                                            <span class="menu-title">
-                                                Riwayat Barang
-                                                <span class="pull-right badge badge-warning"></span>
-                                            </span>
-                                        </a>
-                                    </li>
-
-						             <!--Menu item-->
-                                    <li>
-                                        <a href="widgets.html">
-                                            <i class="glyphicon glyphicon-list-alt"></i>
-                                            <span class="menu-title">
-                                                Barang Ready
-                                                <span class="pull-right badge badge-warning"></span>
-                                            </span>
-                                        </a>
-                                    </li>
-
-						               <!--Menu item-->
-                                    <li>
-                                        <a href="widgets.html">
-                                            <i class="fa fa-file"></i>
-                                            <span class="menu-title">
-                                                Data Pegawai
-                                                <span class="pull-right badge badge-warning"></span>
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                     <!--Menu list item-->
-                                    <li >
-                                        <a href="#">
-                                            <i class="glyphicon glyphicon-book"></i>
-                                            <span class="menu-title">Laporan</span>
-                                            <i class="arrow"></i>
-                                        </a>
-
-                                        <!--Submenu-->
-                                        <ul class="collapse">
-            						                   <li><a href=""><i class="fa fa-book"></i>
-                                           <span class="menu-title">Penjualan
-            						                   <li><a href=""><i class="fa fa-book"></i>Pembelian</a></li>
-            						                </ul>
-            						            </li>
-                                     <!--Menu item-->
-                                    <li>
-                                        <a href="widgets.html">
-                                            <i class="fa fa-wechat"></i>
-                                            <span class="menu-title">
-                                                Kritik & Saran
-                                                <span class="pull-right badge badge-warning"></span>
-                                            </span>
-                                        </a>
-                                    </li>
-                            </div>
-                        </div>
-                    </div>
-                    <!--================================-->
-                    <!--End menu-->
+                         <!--Menu item-->
+                        <li>
+                            <a href="<?= base_url().'kritik' ?>">
+                                <i class="fa fa-wechat"></i>
+                                <span class="menu-title">
+                                    Kritik & Saran
+                                    <span class="pull-right badge badge-warning"></span>
+                                </span>
+                            </a>
+                        </li>
                 </div>
-            </nav>
-
+            </div>
+        </div>
+        <!--================================-->
+        <!--End menu-->
+    </div>
+</nav>
             <!--===================================================-->
             <!--END MAIN NAVIGATION-->
 
