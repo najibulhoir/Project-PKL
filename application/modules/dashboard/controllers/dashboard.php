@@ -21,6 +21,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     $this->load->view('view_profile/v_profile');
 }
 
+  function view_karyawan(){
+    $this->load->view('view_profile/v_karyawan');
+}
+
   function karyawan(){
 	  $this->load->view('karyawan/k_dashboard');
 
