@@ -701,7 +701,11 @@
 
                      <!--Menu item-->
                                 <li>
+
                                     <a href="<?= base_url().'Riwayat/kRiwayat' ?>">
+
+                                    <a href="<?= base_url().'Barang_Ready' ?>">
+
                                         <i class="glyphicon glyphicon-list-alt"></i>
                                         <span class="menu-title">
                                             Riwayat Barang
