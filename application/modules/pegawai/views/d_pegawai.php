@@ -122,9 +122,14 @@
                                 <i class="demo-pli-list-view"></i>
                             </a>
                         </li>
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Navigation toogle button-->
 
                     </ul>
-
+                    <ul class="nav navbar-top-links">   
+                    </ul>
+                </div>
+            </div>
         </header>
         <!--===================================================-->
         <!--END NAVBAR-->
@@ -337,129 +342,129 @@
                                         </a>
                                     </div>
                                     <div id="profile-nav" class="collapse list-group bg-trans">
-                                        <a href="#" class="list-group-item">
-                                            <i class="demo-pli-male icon-lg icon-fw"></i> View Profile
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="demo-pli-gear icon-lg icon-fw"></i> Settings
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="demo-pli-information icon-lg icon-fw"></i> Help
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <i class="demo-pli-unlock icon-lg icon-fw"></i> Logout
-                                        </a>
-                                    </div>
+                                    <a href="<?= base_url().'Dashboard/view_profile' ?>" class="list-group-item">
+                                        <i class="demo-pli-male icon-lg icon-fw"></i> View Profile
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="demo-pli-gear icon-lg icon-fw"></i> Settings
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="demo-pli-information icon-lg icon-fw"></i> Help
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="demo-pli-unlock icon-lg icon-fw"></i> Logout
+                                    </a>
                                 </div>
+                            </div>
 
+                  <ul id="mainnav-menu" class="list-group">
 
-                                <ul id="mainnav-menu" class="list-group">
+                    <!--Category name-->
+                    <li class="list-header">Navigation</li>
 
-						            <!--Category name-->
-						            <li class="list-header">Navigation</li>
+                    <!--Menu list item-->
+                    <li class="active-sub">
+                        <a href="<?= base_url().'Dashboard' ?>">
+                            <i class="fa fa-home"></i>
+                            <span class="menu-title">
+                                Beranda
+                            </span>
+                        </a>
+                    </li>
 
-						            <!--Menu list item-->
-                        <li class="active-sub">
-                            <a href="<?= base_url().'Dashboard' ?>">
-                                <i class="fa fa-home"></i>
-                                <span class="menu-title">
-                                    Beranda
-                                </span>
-                            </a>
-                        </li>
+                    <!--Menu list item-->
+                    <li >
+                        <a href="<?= base_url().'toko' ?>">
+                            <i class="glyphicon glyphicon-book"></i>
+                            <span class="menu-title">Data Toko</span>
+                            <i class="arrow"></i>
+                        </a>
 
-                        <!--Menu list item-->
-                        <li >
-                            <a href="<?= base_url().'toko' ?>">
-                                <i class="glyphicon glyphicon-book"></i>
-                                <span class="menu-title">Data Toko</span>
-                                <i class="arrow"></i>
-                            </a>
+                        <!--Submenu-->
+                        <ul class="collapse">
+                           <li><a href="<?= base_url().'toko' ?>"><i class="fa fa-edit"></i>
+               <span class="menu-title">Informasi Toko
+                           <li><a href="<?= base_url().'faqs' ?>"><i class="fa fa-edit"></i>Faqs</a></li>
+                        </ul>
+                    </li>
 
-                            <!--Submenu-->
-                            <ul class="collapse">
-                               <li><a href="<?= base_url().'toko' ?>"><i class="fa fa-edit"></i>
-                   <span class="menu-title">Informasi Toko
-                               <li><a href="<?= base_url().'faqs' ?>"><i class="fa fa-edit"></i>Faqs</a></li>
-                            </ul>
-                        </li>
+                    <!--Menu item-->
+                    <li>
+                        <a href="<?= base_url().'barang' ?>">
+                            <i class="fa fa-file"></i>
+                            <span class="menu-title">
+                                Data Barang
+                                <span class="pull-right badge badge-warning"></span>
+                            </span>
+                        </a>
+                    </li>
 
-                        <!--Menu item-->
-                        <li>
-                            <a href="<?= base_url().'barang' ?>">
-                                <i class="fa fa-file"></i>
-                                <span class="menu-title">
-                                    Data Barang
-                                    <span class="pull-right badge badge-warning"></span>
-                                </span>
-                            </a>
-                        </li>
+                     <!--Menu item-->
+                    <li>
+                        <a href="<?= base_url().'riwayat' ?>">
+                            <i class="fa fa-history"></i>
+                            <span class="menu-title">
+                                Riwayat Barang
+                                <span class="pull-right badge badge-warning"></span>
+                            </span>
+                        </a>
+                    </li>
 
-                         <!--Menu item-->
-                        <li>
-                            <a href="<?= base_url().'riwayat' ?>">
-                                <i class="fa fa-history"></i>
-                                <span class="menu-title">
-                                    Riwayat Barang
-                                    <span class="pull-right badge badge-warning"></span>
-                                </span>
-                            </a>
-                        </li>
+                     <!--Menu item-->
+                    <li>
+                        <a href="<?= base_url().'Barang_Ready' ?>">
+                            <i class="glyphicon glyphicon-list-alt"></i>
+                            <span class="menu-title">
+                                Barang Ready
+                                <span class="pull-right badge badge-warning"></span>
+                            </span>
+                        </a>
+                    </li>
 
-                         <!--Menu item-->
-                        <li>
-                            <a href="<?= base_url().'Barang_Ready' ?>">
-                                <i class="glyphicon glyphicon-list-alt"></i>
-                                <span class="menu-title">
-                                    Barang Ready
-                                    <span class="pull-right badge badge-warning"></span>
-                                </span>
-                            </a>
-                        </li>
+                       <!--Menu item-->
+                    <li>
+                        <a href="<?= base_url().'pegawai' ?>">
+                            <i class="fa fa-file"></i>
+                            <span class="menu-title">
+                                Data Pegawai
+                                <span class="pull-right badge badge-warning"></span>
+                            </span>
+                        </a>
+                    </li>
 
-                           <!--Menu item-->
-                        <li>
-                            <a href="<?= base_url().'pegawai' ?>">
-                                <i class="fa fa-file"></i>
-                                <span class="menu-title">
-                                    Data Pegawai
-                                    <span class="pull-right badge badge-warning"></span>
-                                </span>
-                            </a>
-                        </li>
+                     <!--Menu list item-->
+                    <li >
+                        <a href="<?= base_url().'penjualan' ?>">
+                            <i class="glyphicon glyphicon-book"></i>
+                            <span class="menu-title">Laporan</span>
+                            <i class="arrow"></i>
+                        </a>
 
-                         <!--Menu list item-->
-                        <li >
-                            <a href="<?= base_url().'penjualan' ?>">
-                                <i class="glyphicon glyphicon-book"></i>
-                                <span class="menu-title">Laporan</span>
-                                <i class="arrow"></i>
-                            </a>
-
-                            <!--Submenu-->
-                            <ul class="collapse">
-                                           <li><a href="<?= base_url().'penjualan' ?>"><i class="fa fa-book"></i>
-                               <span class="menu-title">Penjualan
-                                           <li><a href="<?= base_url().'pembelian' ?>"><i class="fa fa-book"></i>Pembelian</a></li>
-                                        </ul>
-                                    </li>
-                         <!--Menu item-->
-                        <li>
-                            <a href="<?= base_url().'kritik' ?>">
-                                <i class="fa fa-wechat"></i>
-                                <span class="menu-title">
-                                    Kritik & Saran
-                                    <span class="pull-right badge badge-warning"></span>
-                                </span>
-                            </a>
-                        </li>
-                </div>
+                        <!--Submenu-->
+                        <ul class="collapse">
+                                       <li><a href="<?= base_url().'penjualan' ?>"><i class="fa fa-book"></i>
+                           <span class="menu-title">Penjualan
+                                       <li><a href="<?= base_url().'pembelian' ?>"><i class="fa fa-book"></i>Pembelian</a></li>
+                                    </ul>
+                                </li>
+                     <!--Menu item-->
+                    <li>
+                        <a href="<?= base_url().'kritik' ?>">
+                            <i class="fa fa-wechat"></i>
+                            <span class="menu-title">
+                                Kritik & Saran
+                                <span class="pull-right badge badge-warning"></span>
+                            </span>
+                        </a>
+                    </li>
             </div>
         </div>
-        <!--================================-->
-        <!--End menu-->
     </div>
-</nav>
+    <!--================================-->
+    <!--End menu-->
+  </div>
+  </nav>
+
 
             <!--===================================================-->
             <!--END MAIN NAVIGATION-->

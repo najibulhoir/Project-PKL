@@ -20,7 +20,7 @@
 		            </div>
 		            <form action="http://www.themeon.net/nifty/v2.9.1/index.html">
 		                <div class="form-group">
-		                    <input type="text" class="form-control" placeholder="Username" autofocus="">
+		                    <input type="text" class="form-control" placeholder="Email" autofocus="">
 		                </div>
 		                <div class="form-group">
 		                    <input type="password" class="form-control" placeholder="Password">
