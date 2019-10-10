@@ -33,20 +33,7 @@
 		            </form>
 		        </div>
 
-		        <div class="pad-all">
-		            <a href="pages-password-reminder.html" class="btn-link mar-rgt">Forgot password ?</a>
-		            <a href="pages-register.html" class="btn-link mar-lft">Create a new account</a>
 
-		            <div class="media pad-top bord-top">
-		                <div class="pull-right">
-		                    <a href="#" class="pad-rgt"><i class="demo-psi-facebook icon-lg text-primary"></i></a>
-		                    <a href="#" class="pad-rgt"><i class="demo-psi-twitter icon-lg text-info"></i></a>
-		                    <a href="#" class="pad-rgt"><i class="demo-psi-google-plus icon-lg text-danger"></i></a>
-		                </div>
-		                <div class="media-body text-left text-bold text-main">
-		                    Login with
-		                </div>
-		            </div>
 		        </div>
 		    </div>
 		</div>
@@ -55,4 +42,3 @@
 
 		<!-- DEMO PURPOSE ONLY -->
 		<!--===================================================-->
-		

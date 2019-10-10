@@ -13,4 +13,9 @@ class Pembelian extends CI_Controller{
   {
     $this->load->view('d_Pembelian.php');
   }
+
+  function get_download(){
+			force_download('assets/gambar-1.png', NULL);
+		}
+
 }
