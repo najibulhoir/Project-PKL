@@ -15,4 +15,8 @@ class dashboard extends CI_Controller{
     $this->load->view('admin/index');
     $this->load->view('template/footertemplate');
   }
+  
+  function karyawan(){
+	  $this->load->view('karyawan/k_dashboard');
+  }
 }
