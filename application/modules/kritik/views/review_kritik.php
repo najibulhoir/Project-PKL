@@ -347,131 +347,96 @@
 
                               <div class="panel-body">
                             <table>
-                              <div class="fluid">
-                                <div id="demo-email-list">
-  					                        <div class="row">
-  					                            <div class="col-sm-7 toolbar-left">
-                                          <!-- Mail toolbar -->
-					                                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                              <!-- VIEW MESSAGE -->
+                              <!--===================================================-->
 
-					                                <!--Split button dropdowns-->
-					                                <div class="btn-group">
-					                                    <label id="demo-checked-all-mail" for="select-all-mail" class="btn btn-default">
-					                                <input id="select-all-mail" class="magic-checkbox" type="checkbox">
-					                                <label for="select-all-mail"></label>
-					                                    </label>
-                                              <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><i class="dropdown-caret"></i></button>
-					                                    <ul class="dropdown-menu">
-					                                        <li><a href="#" id="demo-select-all-list">All</a></li>
-					                                        <li><a href="#" id="demo-select-none-list">None</a></li>
-					                                        <li><a href="#" id="demo-select-toggle-list">Toggle</a></li>
-					                                        <li class="divider"></li>
-					                                        <li><a href="#" id="demo-select-read-list">Read</a></li>
-					                                        <li><a href="#" id="demo-select-unread-list">Unread</a></li>
-					                                        <li><a href="#" id="demo-select-starred-list">Starred</a></li>
-					                                    </ul>
+					                    <div class="mar-btm pad-btm bord-btm">
+					                        <h1 class="page-header text-overflow">
+					                            <span class="label label-normal label-info">Family</span> Hi John! How are you ?
+					                        </h1>
+					                    </div>
+
+					                    <div class="row">
+					                        <div class="col-sm-7 toolbar-left">
+
+					                            <!--Sender Information-->
+					                            <div class="media">
+					                                <span class="media-left">
+					                                <img src="img/profile-photos/8.png" class="img-circle img-sm" alt="Profile Picture">
+					                            </span>
+					                                <div class="media-body text-left">
+					                                    <div class="text-bold">Lisa D. Smith</div>
+					                                    <small class="text-muted">lisa.aqua@themeon.net</small>
 					                                </div>
-                                <button id="demo-mail-ref-btn" data-toggle="panel-overlay" data-target="#demo-email-list" class="btn btn-default" type="button">                                 <!-- Modal -->
-                                  <i class="demo-psi-repeat-2"></i>
-                                  </button>
-                                  <!--Dropdown button (More Action)-->
-                                  <div class="btn-group dropdown">
-                                      <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
-                                  More <i class="dropdown-caret"></i>
-                                  </button>
-                                  <ul class="dropdown-menu">
-                                      <li><a href="#">Mark as read</a></li>
-                                      <li><a href="#">Mark as unread</a></li>
-                                      <li class="divider"></li>
-                                      <li><a href="#">Star</a></li>
-                                      <li><a href="#">Clear Star</a></li>
-                                  </ul>
-                                  </div>
-                                  </div>
-                                  <div class="toolbar-right">
-                                      <!--Pager buttons-->
-                                      <span class="text-main">
-                                      <strong>1-50</strong>
-                                      of
-                                      <strong>160</strong>
-                                  </span>
-                                      <div class="btn-group btn-group">
-                                          <button class="btn btn-default" type="button">
-                                          <i class="demo-psi-arrow-left"></i>
-                                      </button>
-                                          <button class="btn btn-default" type="button">
-                                          <i class="demo-psi-arrow-right"></i>
-                                      </button>
-                                      </div>
-                                  </div>
-                                  </div>
-                                  <!--Mail list group-->
-                                  <ul id="demo-mail-list" class="mail-list pad-top bord-top">
+					                            </div>
+					                        </div>
+					                        <div class="col-sm-5 toolbar-right">
+                                    <!--Details Information-->
+                                    <p class="mar-no"><small class="text-muted">Monday 12, May 2016</small></p>
+                                    <a href="#">
+                                        <strong>Holiday.zip</strong>
+                                        <i class="demo-psi-paperclip icon-lg icon-fw"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row pad-top">
+                                <div class="col-sm-7 toolbar-left">
 
-                                      <!--Mail list item-->
-                                      <li class="mail-list-unread mail-attach">
-                                          <div class="mail-control">
-                                              <input id="email-list-1" class="magic-checkbox" type="checkbox">
-                                              <label for="email-list-1"></label>
-                                          </div>
-                                          <div class="mail-star"><a href="#"><i class="demo-psi-star"></i></a></div>
-                                          <div class="mail-from"><a href="#">Michael Robert</a></div>
-                                          <div class="mail-time">05:55 PM</div>
-                                          <div class="mail-attach-icon"></div>
-                                          <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>" >This is an example if there is a really really long text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </a>
-                                          </div>
-                                      </li>
+                                    <!--Mail toolbar-->
+                                    <button class="btn btn-default"><i class="demo-pli-printer icon-lg"></i></button>
+                                    <div class="btn-group btn-group">
+                                        <button class="btn btn-default"><i class="demo-pli-information icon-lg"></i></button>
+                                        <button class="btn btn-default"><i class="demo-pli-trash icon-lg"></i> Remove</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 toolbar-right">
+                                    <!--Reply & forward buttons-->
+                                    <div class="btn-group btn-group">
+                                        <a class="btn btn-default" href="#">
+                                        <i class="demo-psi-left-4"></i>
+                                        </a>
+                                        <a class="btn btn-default" href="#">
+                                        <i class="demo-psi-right-4"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
-                                      <!--Mail list item-->
-                                      <li class="mail-starred">
-                                          <div class="mail-control">
-                                              <input id="email-list-2" class="magic-checkbox" type="checkbox">
-                                              <label for="email-list-2"></label>
-                                          </div>
-                                          <div class="mail-star"><a href="#"><i class="demo-psi-star"></i></a></div>
-                                          <div class="mail-from"><a href="#">Shopping Mall</a></div>
-                                          <div class="mail-time">10:45 AM</div>
-                                          <div class="mail-attach-icon"></div>
-                                          <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>">Tracking Your Order - Shoes Store Online</a>
-                                          </div>
-                                      </li>
+                            <!--Message-->
+                            <!--===================================================-->
+                            <div class="mail-message">
+                                Hey John,
+                                <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                                <blockquote class="text-muted">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </blockquote>
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                <br><br> Regards,
+                                <br><br>
+                                <strong>Lisa D. Smith</strong><br> 2834 Street Name<br> San Francisco, CA<br>
+                            </div>
+                            <!--===================================================-->
+                            <!--End Message-->
+                            <div id="demo-mail-textarea" class="mail-message-reply bg-trans-dark">
+                              <strong>Reply</strong> or <strong>Forward</strong> this message...
+                          </div>
 
-                                      <!--Mail list item-->
-                                      <li class="mail-list-unread mail-starred mail-attach">
-                                          <div class="mail-control">
-                                              <input id="email-list-3" class="magic-checkbox" type="checkbox">
-                                              <label for="email-list-3"></label>
-                                          </div>
-                                          <div class="mail-star"><a href="#"><i class="demo-psi-star"></i></a></div>
-                                          <div class="mail-from"><a href="#">Dropbox</a></div>
-                                          <div class="mail-time">07:18 AM</div>
-                                          <div class="mail-attach-icon"><i class="demo-psi-paperclip"></i></div>
-                                          <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>">Reset your account password</a>
-                                          </div>
-                                      </li>
+                          <!--Send button-->
+                          <div class="pad-btm">
+                              <button id="demo-mail-send-btn" type="button" class="btn btn-primary btn-lg btn-block hide">
+                              <span class="demo-psi-mail-send icon-lg icon-fw"></span>
+                              Send Message
+                          </button>
+                          </div>
+                          <!--===================================================-->
+                          <!-- END VIEW MESSAGE -->
 
-                                      <!--Mail list item-->
-                                      <li class="mail-list-unread">
-                                          <div class="mail-control">
-                                              <input id="email-list-4" class="magic-checkbox" type="checkbox">
-                                              <label for="email-list-4"></label>
-                                          </div>
-                                          <div class="mail-star"><a href="#"><i class="demo-psi-star"></i></a></div>
-                                          <div class="mail-from"><a href="#">Server Host</a></div>
-                                          <div class="mail-time">01:51 PM</div>
-                                          <div class="mail-attach-icon"></div>
-                                          <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>">
-                                          <span class="label label-danger">
-                                          Bussines
-                                          </span>
-                                          Regarding to your website issues.
-                                      </a>
-                                          </div>
-                                      </li>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            </div>
                             </table>
                            </div>
                         </div>
