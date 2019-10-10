@@ -230,33 +230,42 @@
                             </div>
 
                             <!--Message-->
-                            <!--===================================================-->
-                            <div class="mail-message">
-                                Hey John,
-                                <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-                                <blockquote class="text-muted">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </blockquote>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                                <br><br> Regards,
-                                <br><br>
-                                <strong>Lisa D. Smith</strong><br> 2834 Street Name<br> San Francisco, CA<br>
-                            </div>
-                            <!--===================================================-->
-                            <!--End Message-->
-                            <div id="demo-mail-textarea" class="mail-message-reply bg-trans-dark">
-                              <strong>Reply</strong> or <strong>Forward</strong> this message...
-                          </div>
+					                    <!--===================================================-->
+					                    <div class="mail-message">
+					                        Hey John,
+					                        <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+					                        <blockquote class="text-muted">
+					                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					                        </blockquote>
+					                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+					                        <br><br> Regards,
+					                        <br><br>
+					                        <strong>Lisa D. Smith</strong><br> 2834 Street Name<br> San Francisco, CA<br>
+					                    </div>
+					                    <!--===================================================-->
+					                    <!--End Message-->
 
-                          <!--Send button-->
-                          <div class="pad-btm">
-                              <button id="demo-mail-send-btn" type="button" class="btn btn-primary btn-lg btn-block hide">
-                              <span class="demo-psi-mail-send icon-lg icon-fw"></span>
-                              Send Message
-                          </button>
-                          </div>
-                          <!--===================================================-->
-                          <!-- END VIEW MESSAGE -->
+                              <!--Quick reply : Summernote Placeholder -->
+  					                    <div id="demo-mail-textarea" class="mail-message-reply bg-trans-dark">
+  					                        <strong>Reply</strong> or <strong>Forward</strong> this message...
+  					                    </div>
+
+  					                    <!--Send button-->
+  					                    <div class="pad-btm">
+  					                        <button id="demo-mail-send-btn" type="button" class="btn btn-primary btn-lg btn-block hide">
+  					                        <span class="demo-psi-mail-send icon-lg icon-fw"></span>
+  					                        Send Message
+  					                    </button>
+  					                    </div>
+  					                    <!--===================================================-->
+  					                    <!-- END VIEW MESSAGE -->
+
+  					                </div>
+  					            </div>
+  					        </div>
+  					    </div>
+
+                  </div>
 
                       </div>
                   </div>

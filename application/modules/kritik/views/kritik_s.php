@@ -247,7 +247,7 @@
                                           <div class="mail-time">05:55 PM</div>
                                           <div class="mail-attach-icon"></div>
                                           <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>" >This is an example if there is a really really long text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </a>
+                                              <a href="<?= base_url().'Kritik/review' ?>" >This is an example if there is a really really long text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </a>
                                           </div>
                                       </li>
 
@@ -262,7 +262,7 @@
                                           <div class="mail-time">10:45 AM</div>
                                           <div class="mail-attach-icon"></div>
                                           <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>">Tracking Your Order - Shoes Store Online</a>
+                                              <a href="<?= base_url().'Kritik/review' ?>">Tracking Your Order - Shoes Store Online</a>
                                           </div>
                                       </li>
 
@@ -277,7 +277,7 @@
                                           <div class="mail-time">07:18 AM</div>
                                           <div class="mail-attach-icon"><i class="demo-psi-paperclip"></i></div>
                                           <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>">Reset your account password</a>
+                                              <a href="<?= base_url().'Kritik/review' ?>">Reset your account password</a>
                                           </div>
                                       </li>
 
@@ -292,7 +292,7 @@
                                           <div class="mail-time">01:51 PM</div>
                                           <div class="mail-attach-icon"></div>
                                           <div class="mail-subject">
-                                              <a href="<?= base_url().'kritik/review' ?>">
+                                              <a href="<?= base_url().'Kritik/review' ?>">
                                           <span class="label label-danger">
                                           Bussines
                                           </span>
