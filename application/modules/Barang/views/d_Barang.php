@@ -364,39 +364,71 @@
                                             <!-- body modal -->
                                             <div class="modal-body">
                                         <form>
-                                            <div class="form-group">
-                                                <label>kode Barang</label>
-                                                <input type="text" class="form-control">
+                                          <div class="form-group col-md-6  ">
+                                              <label for="kd_barang" class="control-label">Kode Barang</label>
+                                              <div class="input-group">
+                                                <div class="input-group-addon">
+                                                  <i class="fa fa-pencil"></i>
+                                                </div>
+                                                <input class="form-control" value="" placeholder="Masukkan Kode Barang" name="kd_Barang" type="text" id="kd_barang">
+                                              </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Nama Barang</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Kategori</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Foto</label>
-                                                <input type="file" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Stok</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Harga</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Diskon</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-
-
+                                            <div class="form-group col-md-6  ">
+                                                <label for="nama_barang" class="control-label">Nama Barang</label>
+                                                <div class="input-group">
+                                                  <div class="input-group-addon">
+                                                    <i class="fa fa-pencil"></i>
+                                                  </div>
+                                                  <input class="form-control" value="" placeholder="Masukkan Nama Barang" name="nama_Barang" type="text" id="nama_barang">
+                                                </div>
+                                              </div>
+                                              <div class="form-group col-md-6  ">
+                                                  <label for="kd_kategori" class="control-label">Kategori</label>
+                                                  <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                      <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <input class="form-control" value="" placeholder="Masukkan Kategori Barang" name="kd_kategori" type="text" id="kd_kategori">
+                                                  </div>
+                                              </div>
+                                            <div class="form-group col-md-6  ">
+														                   <label for="foto" class="control-label">Foto </label>
+														                   <div class="input-group">
+															                 <div class="input-group-addon">
+						                                      <i class="fa fa-file-image-o"></i>
+															                 </div>
+															                     <input class="form-control" placeholder="Masukkan Foto" name="foto_barang" type="file" id="foto_barang">
+														                   </div>
+													                  </div>
+                                            <div class="form-group col-md-6  ">
+                                                <label for="stok" class="control-label">Stok</label>
+                                                <div class="input-group">
+                                                  <div class="input-group-addon">
+                                                    <i class="fa fa-pencil"></i>
+                                                  </div>
+                                                  <input class="form-control" value="" placeholder="Masukkan Stok Barang" name="stok" type="text" id="stok">
+                                                </div>
+                                              </div>
+                                              <div class="form-group col-md-6  ">
+                                                  <label for="harga" class="control-label">Harga</label>
+                                                  <div class="input-group">
+                                                    <div class="input-group-addon">
+                                                      <i class="fa fa-pencil"></i>
+                                                    </div>
+                                                    <input class="form-control" value="" placeholder="Masukkan Harga Barang" name="harga" type="text" id="harga">
+                                                  </div>
+                                                </div>
+                                                <div class="form-group col-md-6  ">
+                                                    <label for="kd_diskon" class="control-label">Diskon</label>
+                                                    <div class="input-group">
+                                                      <div class="input-group-addon">
+                                                        <i class="fa fa-pencil"></i>
+                                                      </div>
+                                                      <input class="form-control" value="" placeholder="Masukkan Diskon Barang" name="kd_diskon" type="text" id="kd_diskon">
+                                                    </div>
+                                                  </div>
                                             <button type="submit" class="btn btn-primary">Simpan</button>
+
                                         </form>
                                             </div>
                                             <!-- footer modal -->
@@ -409,16 +441,16 @@
                              </div>
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Kode Barang</th>
-                                        <th class="min-tablet">Nama Barang</th>
-                                        <th class="min-tablet">Kategori</th>
-                                        <th class="min-desktop">Foto</th>
-                                        <th class="min-desktop">Stok</th>
-                                        <th class="min-desktop">Harga</th>
-                                        <th>Diskon</th>
-                                        <th>Status</th>
-                                        <th> Aksi</th>
+                                        <th><center>No</center></th>
+                                        <th><center>Kode Barang</center></th>
+                                        <th><center>Nama Barang</center></th>
+                                        <th><center>Kategori</center></th>
+                                        <th><center>Foto</center></th>
+                                        <th><center>Stok</center></th>
+                                        <th><center>Harga</center></th>
+                                        <th><center>Diskon</center></th>
+                                        <th><center>Status</center></th>
+                                        <th><center>Aksi</center></th>
                                     </tr>
                                 </thead>
                                 <tbody>
