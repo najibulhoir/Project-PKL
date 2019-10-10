@@ -874,7 +874,7 @@
 
                          <!--Menu item-->
                         <li>
-                            <a href="<?= base_url().'ready' ?>">
+                            <a href="<?= base_url().'Barang_Ready' ?>">
                                 <i class="glyphicon glyphicon-list-alt"></i>
                                 <span class="menu-title">
                                     Barang Ready
