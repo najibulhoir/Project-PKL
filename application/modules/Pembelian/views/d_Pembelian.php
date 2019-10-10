@@ -130,6 +130,7 @@
                         <!--Search-->
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                         <li>
+
                             <div class="custom-search-form">
                                 <label class="btn btn-trans" for="search-input" data-toggle="collapse" data-target="#nav-searchbox">
                                     <i class="demo-pli-magnifi-glass"></i>
@@ -343,89 +344,26 @@
                     <!-- Basic Data Tables -->
                     <!--===================================================-->
                     <div class="panel">
-                        <br>
-
-               &emsp;&nbsp;
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Unduh</button>
-
-            <div class="container-fluid" style="padding-top:20px">
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="thumbnail">
-                            <img src="<?php echo base_url('assets/gambar-1.png') ?>" alt="class="img-responsive" width="100%">
-                            <a href="<?php echo base_url() . 'index.php/download/get_download'; ?>"class="btn btn-primary center-block"> Download </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
                         <div class="panel-body">
+                          <div class="pad-btm form-inline">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                                                 <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-
-                                        <!-- konten modal-->
-                                        <div class="modal-content">
-                                            <!-- heading modal -->
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Tambahkan Pembelian</h4>
-                                            </div>
-                                            <!-- body modal -->
-                                            <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label>kode Barang</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Nama Barang</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Kategori</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Foto</label>
-                                                <input type="file" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Stok</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Harga</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-
-
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
-                                        </form>
-                                            </div>
-                                            <!-- footer modal -->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
-                                            </div>
-                                        </div>
+                              <div class="row">
+                                  <div class="col-sm-6 table-toolbar-left">
+                                  <button class="btn btn-default"><i class="demo-pli-printer icon-lg"></i></button>
                                     </div>
-                                </div>
+                                  </div>
+                        </div>
+                            </div>
                              </div>
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Kode Pembelian</th>
-                                        <th class="min-tablet">Nama Customer</th>
-                                        <th class="min-tablet">Nama Barang</th>
-                                        <th class="min-desktop">Jumlah</th>
-                                        <th class="min-desktop">Ongkir</th>
-                                        <th class="min-desktop">SubHarga</th>
+                                      <th>No</th>
+                                      <th>Kode Pembelian</th>
+                                      <th class="min-tablet">Nama Customer</th>
+                                      <th class="min-tablet">Nama Barang</th>
+                                      <th class="min-desktop">Jumlah</th>
+                                      <th class="min-desktop">Ongkir</th>
+                                      <th class="min-desktop">SubHarga</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -437,6 +375,7 @@
                                         <th></th>
                                         <th></th>
                                         <th></th>
+                                        
                                     </tr>
                                 </tbody>
                             </table>
@@ -924,6 +863,7 @@
                     <!--End menu-->
                 </div>
             </nav>
+
             <!--===================================================-->
             <!--END MAIN NAVIGATION-->
 
