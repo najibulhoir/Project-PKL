@@ -20,6 +20,7 @@ class dashboard extends CI_Controller{
   function view_profile(){
     $this->load->view('view_profile/v_profile');
 }
+
   function karyawan(){
 	  $this->load->view('karyawan/k_dashboard');
 
