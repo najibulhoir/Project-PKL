@@ -13,4 +13,8 @@ class Barang extends CI_Controller{
   {
     $this->load->view('d_Barang.php');
   }
+  function kbarang()
+  {
+  	$this->load->view('k_barang');
+  }
 }

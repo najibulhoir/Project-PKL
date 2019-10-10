@@ -671,7 +671,7 @@
 
                     <!--Menu list item-->
                     <li class="active-sub">
-                        <a href="<?= base_url().'Dashboard' ?>">
+                        <a href="<?= base_url().'dashboard/karyawan' ?>">
                             <i class="fa fa-home"></i>
                             <span class="menu-title">
                     Beranda
@@ -680,24 +680,10 @@
                     </li>
 
                                 <!--Menu list item-->
-                    <li >
-                        <a href="">
-                            <i class="glyphicon glyphicon-book"></i>
-                            <span class="menu-title">Data Toko</span>
-                  <i class="arrow"></i>
-                        </a>
-
-                        <!--Submenu-->
-                        <ul class="collapse">
-                           <li><a href="<?= base_url().'toko' ?>"><i class="fa fa-edit"></i>
-                           <span class="menu-title">Informasi Toko
-                           <li><a href="<?= base_url().'faqs' ?>"><i class="fa fa-edit"></i>Faqs</a></li>
-                        </ul>
-                    </li>
 
                     <!--Menu item-->
                                 <li>
-                                    <a href="<?= base_url().'Barang' ?>">
+                                    <a href="<?= base_url().'Barang/kbarang' ?>">
                                         <i class="fa fa-file"></i>
                                         <span class="menu-title">
                                             Data Barang
@@ -708,19 +694,8 @@
 
                                  <!--Menu item-->
                                 <li>
-                                    <a href="<?= base_url().'riwayat' ?>">
+                                    <a href="<?= base_url().'Barang_Ready/kbarangr' ?>">
                                         <i class="fa fa-history"></i>
-                                        <span class="menu-title">
-                                            Riwayat Barang
-                                            <span class="pull-right badge badge-warning"></span>
-                                        </span>
-                                    </a>
-                                </li>
-
-                     <!--Menu item-->
-                                <li>
-                                    <a href="<?= base_url().'ready' ?>">
-                                        <i class="glyphicon glyphicon-list-alt"></i>
                                         <span class="menu-title">
                                             Barang Ready
                                             <span class="pull-right badge badge-warning"></span>
@@ -728,42 +703,18 @@
                                     </a>
                                 </li>
 
-                       <!--Menu item-->
+                                <!--Menu item-->
                                 <li>
-                                    <a href="<?= base_url().'pegawai' ?>">
-                                        <i class="fa fa-file"></i>
+                                    <a href="<?= base_url().'Riwayat/kriwayat' ?>">
+                                        <i class="glyphicon glyphicon-list-alt"></i>
                                         <span class="menu-title">
-                                            Data Pegawai
+                                            Riwayat Barang
                                             <span class="pull-right badge badge-warning"></span>
                                         </span>
                                     </a>
                                 </li>
 
-                                 <!--Menu list item-->
-                                <li >
-                                    <a href="#">
-                                        <i class="glyphicon glyphicon-book"></i>
-                                        <span class="menu-title">Laporan</span>
-                                        <i class="arrow"></i>
-                                    </a>
-
-                                    <!--Submenu-->
-                                    <ul class="collapse">
-                                       <li><a href="<?= base_url().'Penjualan' ?>"><i class="fa fa-book"></i>
-                                       <span class="menu-title">Penjualan
-                                       <li><a href="<?= base_url().'Pembelian' ?>"><i class="fa fa-book"></i>Pembelian</a></li>
-                                    </ul>
-                                </li>
-                                 <!--Menu item-->
-                                <li>
-                                    <a href="<?= base_url().'kritik' ?>">
-                                        <i class="fa fa-wechat"></i>
-                                        <span class="menu-title">
-                                            Kritik & Saran
-                                            <span class="pull-right badge badge-warning"></span>
-                                        </span>
-                                    </a>
-                                </li>
+  
                         </div>
                     </div>
                 </div>
@@ -775,8 +726,8 @@
                 <div id="page-head">
 
 <div class="pad-all text-center">
-    <h3>Welcome back to the Dashboard.</h3>
-    <p1>Scroll down to see quick links and overviews of your Server, To do list, Order status or get some Help using Nifty.<p></p>
+    <h3>Selamat Datang</h3>
+    <p1>Karyawan Toko<p></p>
 </p1></div>
                     </div>
 

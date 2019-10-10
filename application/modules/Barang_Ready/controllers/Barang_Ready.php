@@ -13,4 +13,10 @@ class Barang_Ready extends CI_Controller{
   {
     $this->load->view('barang_ready.php');
   }
+  
+   function kbarangre()
+  {
+    $this->load->view('kbarang_ready.php');
+  }
+
 }
