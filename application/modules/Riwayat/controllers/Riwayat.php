@@ -13,4 +13,9 @@ class Riwayat extends CI_Controller{
   {
     $this->load->view('d_Riwayat.php');
   }
+
+  function kriwayat()
+  {
+  	$this->load->view('k_Riwayat');
+}
 }
