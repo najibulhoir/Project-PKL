@@ -15,4 +15,8 @@ class dashboard extends CI_Controller{
     $this->load->view('admin/index');
     $this->load->view('template/footertemplate');
   }
+
+  function view_profile(){
+    $this->load->view('view_profile/v_profile');
+  }
 }
