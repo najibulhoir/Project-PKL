@@ -364,36 +364,55 @@
                                             <!-- body modal -->
                                             <div class="modal-body">
                                         <form>
-                                            <div class="form-group">
-                                                <label>Lokasi Toko</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Telephone</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Tentang</label>
-                                                <input type="date" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Foto Toko</label>
-                                                <input type="file" class="form-control">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>No Rekening</label>
-                                                <input type="text" class="form-control" id="alamat">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Faqs</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                          <div class="panel-body" >
+                                              <div class="row" >
+                                                  <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                          <label class="control-label" style="color:#000000"><b>Lokasi Toko</b></label>
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                          <label class="control-label" style="color:#000000"><b>Telephone</b></label>
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                          <label class="control-label" style="color:#000000"><b>Tentang</b></label>
+                                                          <input type="text" class="form-control" style="height:100px;">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                          <label class="control-label" style="color:#000000"><b>Foto</b></label>
+                                                          <input type="file" >
+                                                          <img src="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                          <label class="control-label" style="color:#000000"><b>No Rekening</b></label>
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                          <label class="control-label" style="color:#000000"><b>Faqs</b></label>
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
                                         </form>
                                             </div>
                                             <!-- footer modal -->
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+                                                <button class="btn btn-primary">Simpan</button>
+                                                <button data-dismiss="modal" class="btn btn-default" type="button" style="color:#000000"><b>Keluar</b></button>
                                             </div>
                                         </div>
                                     </div>
