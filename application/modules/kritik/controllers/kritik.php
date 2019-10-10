@@ -12,5 +12,10 @@ class Kritik extends CI_Controller{
   function index()
   {
     $this->load->view('kritik_s.php');
+
+  }
+  function review()
+  {
+    $this->load->view('review_kritik.php');
   }
 }
