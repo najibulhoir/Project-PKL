@@ -122,9 +122,9 @@
                                 <i class="demo-pli-list-view"></i>
                             </a>
                         </li>
-                      
+
                     </ul>
-                   
+
         </header>
         <!--===================================================-->
         <!--END NAVBAR-->
@@ -173,7 +173,7 @@
                         <div class="col-md-6">
                             <div id="demo-panel-ref" class="panel">
                                 <div class="panel-heading">
-                                   
+
                             <button data-target="#demo-default-modal" data-toggle="modal" class="btn btn-primary">Tambah Pegawai</button>
                                 </div>
                          </div>
@@ -236,7 +236,7 @@
 
                 <!--Modal body-->
                 <div class="modal-body"  >
-                  
+
                                 <!--Block Styled Form -->
                                 <!--===================================================-->
                                 <form>
@@ -308,7 +308,7 @@
 
     <!--===================================================-->
     <!--End Default Bootstrap Modal-->
-           
+
              <!--MAIN NAVIGATION-->
             <!--===================================================-->
             <nav id="mainnav-container">
@@ -408,7 +408,7 @@
 
                          <!--Menu item-->
                         <li>
-                            <a href="<?= base_url().'ready' ?>">
+                            <a href="<?= base_url().'Barang_Ready' ?>">
                                 <i class="glyphicon glyphicon-list-alt"></i>
                                 <span class="menu-title">
                                     Barang Ready
