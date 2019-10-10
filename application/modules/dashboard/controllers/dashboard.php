@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class dashboard extends CI_Controller{
+  class Dashboard extends CI_Controller{
 
-  public function __construct()
+    public function __construct()
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
@@ -20,6 +20,7 @@ class dashboard extends CI_Controller{
   function view_profile(){
     $this->load->view('view_profile/v_profile');
 }
+
   function karyawan(){
 	  $this->load->view('karyawan/k_dashboard');
 
