@@ -29,4 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  $this->load->view('karyawan/k_dashboard');
 
   }
+
+  function home()
+  {
+     $this->load->view('customer/c_dashboard');
+  }
 }
