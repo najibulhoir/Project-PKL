@@ -126,7 +126,7 @@
                         <!--End Navigation toogle button-->
 
                     </ul>
-                    <ul class="nav navbar-top-links">   
+                    <ul class="nav navbar-top-links">
                     </ul>
                 </div>
             </div>
@@ -249,24 +249,32 @@
                                     <tr>
                                         <th>Lokasi Toko</th>
                                         <th>Telephone</th>
-                                        <th class="min-desktop">Tentang</th>
+                                        <th>Tentang</th>
                                         <th>Foto Toko</th>
-                                        <th class="min-desktop">No Rekening</th>
+                                        <th>No Rekening</th>
                                         <th>Faqs</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                  <?php foreach ($toko as $tok) { ?>
                                     <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-
+                                      <th><?php echo $tok->lokasi_toko?></th>
+                                      <th><?php echo  $tok->tlp_toko ?></th>
+                                      <th><?php echo  $tok->tentang ?></th>
+                                      <td>
+                                        <img src="<?php echo base_url('assets/adminlte/images/'.$tok->foto_toko)?>" style="width:100px; height:100px">
+                                      </td>
+                                      <th><?php echo  $tok->no_rek  ?></th>
+                                      <th></th>
+                                      <td width="250">
+                                      <a href="<?php echo site_url(''.$tok->kd_toko) ?>"
+                                       class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
+                                        <a onclick="deleteConfirm('<?php echo site_url(''.$tok->kd_toko) ?>')"
+                                         href="#!" class="btn btn-small text-danger"><i class="fa fa-trash"></i> Hapus</a>
+                                      </td>
                                     </tr>
+                                      <?php } ?>
                                 </tbody>
                             </table>
                            </div>
