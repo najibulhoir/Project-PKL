@@ -7,10 +7,12 @@ class Penjualan extends CI_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+    $this->load->model('M_penjualan');
   }
 
   function index()
   {
-    $this->load->view('d_Penjualan.php');
+    $data['penjualan'] = $this->M_penjualan->tampilDatapenjualan()->result();
+    $this->load->view('d_Penjualan.php',$data);
   }
 }

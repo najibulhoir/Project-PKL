@@ -126,7 +126,7 @@
                         <!--End Navigation toogle button-->
 
                     </ul>
-                    <ul class="nav navbar-top-links">   
+                    <ul class="nav navbar-top-links">
                     </ul>
                 </div>
             </div>
