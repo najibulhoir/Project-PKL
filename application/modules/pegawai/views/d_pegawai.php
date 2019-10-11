@@ -200,13 +200,13 @@
                                     <?php foreach ($pegawai as $peg) { ?>
                                     <tr>
                                         <th><?php echo $peg->nama?></th>
-                                        <th><?php echo $peg->tempat_lahir ?></th>
-                                        <th><?php echo $peg->tanggal_lahir  ?></th>
-                                        <th><?php echo $peg->email  ?></th>
-                                        <th><?php echo $peg->tlp  ?></th>
-                                        <th><?php echo $peg->alamat  ?></th>
-                                        <th></th>
-                                        <th></th>
+                                        <th><?php echo $peg->tempat_lahir?></th>
+                                        <th><?php echo $peg->tanggal_lahir?></th>
+                                        <th><?php echo $peg->email?></th>
+                                        <th><?php echo $peg->tlp?></th>
+                                        <th><?php echo $peg->alamat?></th>
+                                        <th><img src="<?php echo base_url('assets/adminlte/images/'.$peg->foto)?>" style="width:100px; height:100px"></th>
+                                        <th><?php echo $peg->kd_pegawai?></th>
                                         <th> 
                                         <?php echo anchor(''.$peg->kd_admin,'Edit'); ?>
                                         <?php echo anchor(''.$peg->kd_admin,'Hapus'); ?>
@@ -247,19 +247,19 @@
 
                                 <!--Block Styled Form -->
                                 <!--===================================================-->
-                                <form>
+                                <form action="<?php echo base_url('Pegawai/tambah_pegawai') ?>" method="post" enctype="multipart/form-data">
                                     <div class="panel-body" >
                                         <div class="row" >
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Nama</b></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="nama" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Tempat Lahir</b></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="tempat_lahir" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -267,49 +267,48 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Tanggal Lahir</b></label>
-                                                    <input type="date" class="form-control">
+                                                    <input type="date" name="tanggal_lahir" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Email</b></label>
-                                                    <input type="email" class="form-control">
+                                                    <input type="email" name="email" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Password</b></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="password" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Telepon</b></label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="tlp" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Alamat</b></label>
-                                                    <input type="text" class="form-control" style="height:100px;">
+                                                    <input type="text" name="alamat" class="form-control" style="height:100px;">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Foto</b></label>
-                                                    <input type="file">
-                                                    <img src="">
+                                                    <input type="file" name="foto">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                <!--Modal footer-->
+                                     <!--Modal footer-->
                 <div class="modal-footer">
-                    <button class="btn btn-primary">Simpan</button>
+                    <button class="btn btn-primary" name="btntambah" >Simpan</button>
                     <button data-dismiss="modal" class="btn btn-default" type="button" style="color:#000000"><b>Keluar</b></button>
                 </div>
+                                </form>
+                            </div>
             </div>
         </div>
     </div>

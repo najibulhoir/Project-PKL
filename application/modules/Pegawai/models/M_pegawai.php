@@ -8,4 +8,9 @@ class M_pegawai extends CI_Model {
 	{
 		return $this->db->get('tm_admin');
 	}
+
+	function input_data($data,$table)
+  {
+		$this->db->insert($table,$data);
+	}
 }

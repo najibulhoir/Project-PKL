@@ -23,6 +23,7 @@ class Pegawai extends CI_Controller{
 
   function tambah_pegawai()
   {
+  	
   		$nm = $this->input->post('nama');
 		$tmpl = $this->input->post('tempat_lahir');
 		$tngl = $this->input->post('tanggal_lahir');
@@ -30,19 +31,32 @@ class Pegawai extends CI_Controller{
 		$pass = $this->input->post('password');
 		$tel = $this->input->post('tlp');
 		$alam = $this->input->post('alamat');
+
+		$config['max_size']=2048;
+		$config['allowed_types']="png|jpg|jpeg|gif";
+		$config['remove_spaces']=TRUE;
+		$config['overwrite']=TRUE;
+		$config['upload_path']=FCPATH.'assets/adminlte/images/';
+
+		$this->load->library('upload');
+		$this->upload->initialize($config);
+
+		//ambil data image
+		$this->upload->do_upload('foto');
+		$data_image=$this->upload->data('file_name');
+		$pict=$data_image;
  
 		$data = array(
-			'nama' => $nama,
+			'nama' => $nm,
 			'tempat_lahir' => $tmpl,
 			'tanggal_lahir' => $tngl,
 			'email' => $em,
 			'password' => $pass,
 			'tlp' => $tel,
 			'alamat' => $alam,
-			);
+			'foto' => $pict );
 
 		$this->M_pegawai->input_data($data,'tm_admin');
 		redirect('Pegawai');
-
   }
 }
