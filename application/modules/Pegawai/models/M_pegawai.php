@@ -6,7 +6,11 @@ class M_pegawai extends CI_Model {
 	// get data produsen
 	function tampilDatapegawai()
 	{
-		return $this->db->get('tm_admin');
+		 $this->db->select('*');
+		 $this->db->from('tm_admin');
+		 $this->db->join('tm_pegawai','tm_admin.kd_admin=tm_pegawai.kd_pegawai');
+		 $query = $this->db->get();
+		 return $query;
 	}
 
 	function input_data($data,$table)

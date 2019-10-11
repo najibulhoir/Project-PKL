@@ -206,7 +206,7 @@
                                         <th><?php echo $peg->tlp?></th>
                                         <th><?php echo $peg->alamat?></th>
                                         <th><img src="<?php echo base_url('assets/adminlte/images/'.$peg->foto)?>" style="width:100px; height:100px"></th>
-                                        <th><?php echo $peg->kd_pegawai?></th>
+                                        <th><?php echo $peg->status_pegawai?></th>
                                         <th> 
                                         <?php echo anchor(''.$peg->kd_admin,'Edit'); ?>
                                         <?php echo anchor(''.$peg->kd_admin,'Hapus'); ?>
