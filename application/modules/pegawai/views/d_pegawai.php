@@ -126,7 +126,7 @@
                         <!--End Navigation toogle button-->
 
                     </ul>
-                    <ul class="nav navbar-top-links">   
+                    <ul class="nav navbar-top-links">
                     </ul>
                 </div>
             </div>
@@ -207,10 +207,12 @@
                                         <th><?php echo $peg->alamat?></th>
                                         <th><img src="<?php echo base_url('assets/adminlte/images/'.$peg->foto)?>" style="width:100px; height:100px"></th>
                                         <th><?php echo $peg->kd_pegawai?></th>
-                                        <th> 
-                                        <?php echo anchor(''.$peg->kd_admin,'Edit'); ?>
-                                        <?php echo anchor(''.$peg->kd_admin,'Hapus'); ?>
-                                        </th>
+                                        <td width="250">
+                                        <a href="<?php echo site_url(''.$peg->kd_admin) ?>"
+                                         class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
+                                          <a onclick="deleteConfirm('<?php echo site_url(''.$peg->kd_admin) ?>')"
+                                           href="#!" class="btn btn-small text-danger"><i class="fa fa-trash"></i> Hapus</a>
+                                        </td>
                                     </tr>
                                 <?php } ?>
                                 </tbody>

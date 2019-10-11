@@ -263,7 +263,7 @@
                                       <th><?php echo  $tok->tlp_toko ?></th>
                                       <th><?php echo  $tok->tentang ?></th>
                                       <td>
-                                        <img src="<?php echo  $tok->foto_toko ?>" width="64" />
+                                        <img src="<?php echo base_url('assets/adminlte/images/'.$tok->foto_toko)?>" style="width:100px; height:100px">
                                       </td>
                                       <th><?php echo  $tok->no_rek  ?></th>
                                       <th></th>
