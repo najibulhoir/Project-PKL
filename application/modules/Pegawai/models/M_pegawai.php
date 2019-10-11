@@ -8,10 +8,10 @@ class M_pegawai extends CI_Model {
 	{
 		 $this->db->select('*');
 		 $this->db->from('tm_admin');
-		 $this->db->join('tm_pegawai','tm_admin.kd_admin=tm_pegawai.kd_pegawai');
+		 $this->db->join('tm_pegawai','tm_pegawai.kd_pegawai=tm_admin.kd_pegawai');
 		 $query = $this->db->get();
 		 return $query;
-	}
+		}
 
 	function input_data($data,$table)
   {
