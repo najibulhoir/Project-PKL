@@ -126,7 +126,7 @@
                         <!--End Navigation toogle button-->
 
                     </ul>
-                    <ul class="nav navbar-top-links">   
+                    <ul class="nav navbar-top-links">
                     </ul>
                 </div>
             </div>
@@ -191,14 +191,14 @@
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
-                                        <form>
+                                        <form action="<?php echo base_url('faqs/tambah_faqs') ?>" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <label>Pertanyaan</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" id="faqs">
                                             </div>
                                             <div class="form-group">
                                                 <label>Jawaban</label>
-                                                <input type="text" class="form-control" id="alamat">
+                                                <input type="text" class="form-control" id="jawab">
                                             </div>
 
                                             <button type="submit" class="btn btn-primary">Simpan</button>
@@ -220,10 +220,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        </tr>
+                                  <?php foreach ($faqs as $faq) { ?>
+                                  <tr>
+                                      <th><?php echo $faq->faqs?></th>
+                                      <th><?php echo $faq->jawab?></th>
+                                       <th width="250">
+                                      <a href="<?php echo site_url(''.$faq->kd_faqs) ?>"
+                                       class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
+                                        <a onclick="deleteConfirm('<?php echo site_url(''.$faq->kd_faqs) ?>')"
+                                         href="#!" class="btn btn-small text-danger"><i class="fa fa-trash"></i> Hapus</a>
+                                      </th>
+                                  </tr>
+                              <?php } ?>
                                 </tbody>
                             </table>
                            </div>

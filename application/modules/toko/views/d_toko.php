@@ -190,7 +190,7 @@
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
-                                        <form>
+                                        <formaction="<?php echo base_url('toko/tambah_toko') ?>" method="post" enctype="multipart/form-data">
                                           <div class="panel-body" >
                                               <div class="row" >
                                                   <div class="col-sm-6">
@@ -252,7 +252,6 @@
                                         <th>Tentang</th>
                                         <th>Foto Toko</th>
                                         <th>No Rekening</th>
-                                        <th>Faqs</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -266,7 +265,6 @@
                                         <img src="<?php echo base_url('assets/adminlte/images/'.$tok->foto_toko)?>" style="width:100px; height:100px">
                                       </td>
                                       <th><?php echo  $tok->no_rek  ?></th>
-                                      <th></th>
                                       <td width="250">
                                       <a href="<?php echo site_url(''.$tok->kd_toko) ?>"
                                        class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>

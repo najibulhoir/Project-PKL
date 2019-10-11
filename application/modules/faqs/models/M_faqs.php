@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_toko extends CI_Model {
+class M_faqs extends CI_Model {
 
 	// get data produsen
-	function tampilDatatoko()
+	function tampilfaqs()
 	{
 		 $this->db->select('*');
-		 $this->db->from('tm_info');
+		 $this->db->from('tm_faqs');
 		 $query = $this->db->get();
 		 return $query;
 		}

@@ -7,10 +7,28 @@ class Faqs extends CI_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+    $this->load->model('M_faqs');
   }
 
   function index()
   {
-    $this->load->view('d_faqs.php');
+    $data['faqs'] = $this->M_faqs->tampilfaqs()->result();
+    $this->load->view('d_faqs',$data);
   }
-}
+  function tambah_faqs()
+  {
+    $tanya = $this->input->post('faqs');
+    $jwb = $this->input->post('jawab');
+
+    $data = array(
+      'faqs' => $tanya,
+      'jawab' => $jwb,
+
+      );
+
+    $this->M_faqs->input_data($data,'tm_faqs');
+    redirect('Faqs');
+
+  }
+
+  }
