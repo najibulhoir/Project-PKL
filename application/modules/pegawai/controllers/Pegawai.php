@@ -1,16 +1,27 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Pegawai extends CI_Controller{
+class Pegawai extends MX_Controller{
 
-  public function __construct()
-  {
-    parent::__construct();
-    //Codeigniter : Write Less Do More
-  }
+	function __construct()
+	{
+		parent:: __construct();
+		
+		// load model 
+
+		$this->load->model('M_pegawai');
+
+	}
 
   function index()
   {
-    $this->load->view('d_pegawai.php');
+   // view
+		$data = array(
+			'namamodule' 	=> "Pegawai",
+			'namafileview' 	=> "d_pegawai",
+
+			// variable 
+			'tampilDatapegawai'=> $this->M_pegawai->tampilDatapegawai()
+		);
   }
 }
