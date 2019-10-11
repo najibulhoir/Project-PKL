@@ -187,29 +187,32 @@
                                     <tr>
                                         <th>Nama</th>
                                         <th>Tempat Lahir</th>
-                                        <th class="min-tablet">Tanggal Lahir</th>
-                                        <th class="min-tablet">Email</th>
-                                        <th class="min-desktop">Password</th>
-                                        <th class="min-desktop">Telepon</th>
-                                        <th class="min-desktop">Alamat</th>
+                                        <th>Tanggal Lahir</th>
+                                        <th>Email</th>
+                                        <th>Telepon</th>
+                                        <th>Alamat</th>
                                         <th>Foto</th>
                                         <th>Status</th>
                                         <th> Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php foreach ($pegawai as $peg) { ?>
                                     <tr>
+                                        <th><?php echo $peg->nama?></th>
+                                        <th><?php echo $peg->tempat_lahir ?></th>
+                                        <th><?php echo $peg->tanggal_lahir  ?></th>
+                                        <th><?php echo $peg->email  ?></th>
+                                        <th><?php echo $peg->tlp  ?></th>
+                                        <th><?php echo $peg->alamat  ?></th>
                                         <th></th>
                                         <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
+                                        <th> 
+                                        <?php echo anchor(''.$peg->kd_admin,'Edit'); ?>
+                                        <?php echo anchor(''.$peg->kd_admin,'Hapus'); ?>
+                                        </th>
                                     </tr>
+                                <?php } ?>
                                 </tbody>
                             </table>
                            </div>
