@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+ 
 
 <!-- Mirrored from www.themeon.net/nifty/v2.9.1/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:05 GMT -->
 <head>
@@ -167,138 +167,59 @@
                 <!--===================================================-->
                 <div id="page-content">
 
-
                     <!-- Basic Data Tables -->
                     <!--===================================================-->
                     <div class="panel">
-                        <br>
-
-               &emsp;&nbsp;
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Tambah</button>
 
                         <div class="panel-body">
                             <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                                                 <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
+                                                                <!-- Modal -->
+                   <div class="row">
+                        <div class="col-md-6">
+                            <div id="demo-panel-ref" class="panel">
+                                <div class="panel-heading">
 
-                                        <!-- konten modal-->
-                                        <div class="modal-content">
-                                            <!-- heading modal -->
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Tambahkan Data</h4>
-                                            </div>
-                                            <!-- body modal -->
-                                            <div class="modal-body">
-                                        <form>
-                                          <div class="form-group col-md-6  ">
-                                              <label for="kd_barang" class="control-label">Kode Barang</label>
-                                              <div class="input-group">
-                                                <div class="input-group-addon">
-                                                  <i class="fa fa-pencil"></i>
-                                                </div>
-                                                <input class="form-control" value="" placeholder="Masukkan Kode Barang" name="kd_Barang" type="text" id="kd_barang">
-                                              </div>
-                                            </div>
-                                            <div class="form-group col-md-6  ">
-                                                <label for="nama_barang" class="control-label">Nama Barang</label>
-                                                <div class="input-group">
-                                                  <div class="input-group-addon">
-                                                    <i class="fa fa-pencil"></i>
-                                                  </div>
-                                                  <input class="form-control" value="" placeholder="Masukkan Nama Barang" name="nama_Barang" type="text" id="nama_barang">
-                                                </div>
-                                              </div>
-                                              <div class="form-group col-md-6  ">
-                                                  <label for="kd_kategori" class="control-label">Kategori</label>
-                                                  <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                      <i class="fa fa-pencil"></i>
-                                                    </div>
-                                                    <input class="form-control" value="" placeholder="Masukkan Kategori Barang" name="kd_kategori" type="text" id="kd_kategori">
-                                                  </div>
-                                              </div>
-                                            <div class="form-group col-md-6  ">
-														                   <label for="foto" class="control-label">Foto </label>
-														                   <div class="input-group">
-															                 <div class="input-group-addon">
-						                                      <i class="fa fa-file-image-o"></i>
-															                 </div>
-															                     <input class="form-control" placeholder="Masukkan Foto" name="foto_barang" type="file" id="foto_barang">
-														                   </div>
-													                  </div>
-                                            <div class="form-group col-md-6  ">
-                                                <label for="stok" class="control-label">Stok</label>
-                                                <div class="input-group">
-                                                  <div class="input-group-addon">
-                                                    <i class="fa fa-pencil"></i>
-                                                  </div>
-                                                  <input class="form-control" value="" placeholder="Masukkan Stok Barang" name="stok" type="text" id="stok">
-                                                </div>
-                                              </div>
-                                              <div class="form-group col-md-6  ">
-                                                  <label for="harga" class="control-label">Harga</label>
-                                                  <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                      <i class="fa fa-pencil"></i>
-                                                    </div>
-                                                    <input class="form-control" value="" placeholder="Masukkan Harga Barang" name="harga" type="text" id="harga">
-                                                  </div>
-                                                </div>
-                                                <div class="form-group col-md-6  ">
-                                                    <label for="kd_diskon" class="control-label">Diskon</label>
-                                                    <div class="input-group">
-                                                      <div class="input-group-addon">
-                                                        <i class="fa fa-pencil"></i>
-                                                      </div>
-                                                      <input class="form-control" value="" placeholder="Masukkan Diskon Barang" name="kd_diskon" type="text" id="kd_diskon">
-                                                    </div>
-                                                  </div>
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
-
-                                        </form>
-                                            </div>
-                                            <!-- footer modal -->
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <button data-target="#demo-default-modal" data-toggle="modal" class="btn btn-primary">Tambah Data</button>
                                 </div>
-                             </div>
+                         </div>
+                            </div>
                                 <thead>
                                     <tr>
-                                        <th><center>No</center></th>
-                                        <th><center>Kode Barang</center></th>
-                                        <th><center>Nama Barang</center></th>
-                                        <th><center>Kategori</center></th>
-                                        <th><center>Foto</center></th>
-                                        <th><center>Stok</center></th>
-                                        <th><center>Harga</center></th>
-                                        <th><center>Diskon</center></th>
-                                        <th><center>Status</center></th>
-                                        <th><center>Aksi</center></th>
+                                        <th>Kode Barang</th>
+                                        <th>Nama Barang</th>
+                                        <th>Kategori</th>
+                                        <th>Foto</th>
+                                        <th>Stok</th>
+                                        <th>Harga</th>
+                                        <th>Diskon</th>
+                                        <th>Status</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php foreach ($barang as $bar) { ?>
                                     <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
+                                        <th><?php echo $bar->Kode_Barang?></th>
+                                        <th><?php echo $bar->Nama_Barang?></th>
+                                        <th><?php echo $bar->Kategori?></th>
+                                        <th><?php echo $bar->Stok?></th>
+                                        <th><?php echo $bar->Harga?></th>
+                                        <th><?php echo $bar->Diskon?></th>
+                                        <th><img src="<?php echo base_url('assets/adminlte/images/'.$peg->foto)?>" style="width:100px; height:100px"></th>
+                                        <th><?php echo $bar->status?></th>
+                                         <th width="250">
+                                        <a href="<?php echo site_url(''.$bar->Kode_Barang) ?>"
+                                         class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
+                                          <a onclick="deleteConfirm('<?php echo site_url(''.$bar->Kode_Barang) ?>')"
+                                           href="#!" class="btn btn-small text-danger"><i class="fa fa-trash"></i> Hapus</a>
+                                        </th>
                                     </tr>
+                                <?php } ?>
                                 </tbody>
                             </table>
                            </div>
                         </div>
-                    </div>
+                
                     <!--===================================================-->
                     <!-- End Striped Table -->
 
@@ -309,291 +230,97 @@
             <!--===================================================-->
             <!--END CONTENT CONTAINER-->
 
-            <!--ASIDE-->
-            <!--===================================================-->
-            <aside id="aside-container">
-                <div id="aside">
-                    <div class="nano">
-                        <div class="nano-content">
 
-                            <!--Nav tabs-->
-                            <!--================================-->
-                            <ul class="nav nav-tabs nav-justified">
-                                <li class="active">
-                                    <a href="#demo-asd-tab-1" data-toggle="tab">
-                                        <i class="demo-pli-speech-bubble-7 icon-lg"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#demo-asd-tab-2" data-toggle="tab">
-                                        <i class="demo-pli-information icon-lg icon-fw"></i> Report
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#demo-asd-tab-3" data-toggle="tab">
-                                        <i class="demo-pli-wrench icon-lg icon-fw"></i> Settings
-                                    </a>
-                                </li>
-                            </ul>
-                            <!--================================-->
-                            <!--End nav tabs-->
+            <!--Default Bootstrap Modal-->
+    <!--===================================================-->
+    <div class="modal fade" id="demo-default-modal" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true" >
+        <div class="modal-dialog">
+            <div class="modal-content" >
 
-
-
-                            <!-- Tabs Content -->
-                            <!--================================-->
-                            <div class="tab-content">
-
-                                <!--First tab (Contact list)-->
-                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                                <div class="tab-pane fade in active" id="demo-asd-tab-1">
-                                    <p class="pad-all text-main text-sm text-uppercase text-bold">
-                                        <span class="pull-right badge badge-warning">3</span> Family
-                                    </p>
-
-                                    <!--Family-->
-                                    <div class="list-group bg-trans">
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
-                                                <i class="badge badge-success badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Stephen Tran</p>
-                                                <small class="text-muteds">Availabe</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Brittany Meyer</p>
-                                                <small class="text-muteds">I think so</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
-                                                <i class="badge badge-info badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Jack George</p>
-                                                <small class="text-muteds">Last Seen 2 hours ago</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Donald Brown</p>
-                                                <small class="text-muteds">Lorem ipsum dolor sit amet.</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
-                                                <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Betty Murphy</p>
-                                                <small class="text-muteds">Idle</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="img/profile-photos/9.png" alt="Profile Picture">
-                                                <i class="badge badge-danger badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Samantha Reid</p>
-                                                <small class="text-muteds">Offline</small>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <hr>
-                                    <p class="pad-all text-main text-sm text-uppercase text-bold">
-                                        <span class="pull-right badge badge-success">Offline</span> Friends
-                                    </p>
-
-                                    <!--Works-->
-                                    <div class="list-group bg-trans">
-                                        <a href="#" class="list-group-item">
-                                            <span class="badge badge-purple badge-icon badge-fw pull-left"></span> Joey K. Greyson
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <span class="badge badge-info badge-icon badge-fw pull-left"></span> Andrea Branden
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <span class="badge badge-success badge-icon badge-fw pull-left"></span> Johny Juan
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <span class="badge badge-danger badge-icon badge-fw pull-left"></span> Susan Sun
-                                        </a>
-                                    </div>
-
-
-                                    <hr>
-                                    <p class="pad-all text-main text-sm text-uppercase text-bold">News</p>
-
-                                    <div class="pad-hor">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer
-                                            <a data-title="45%" class="add-tooltip text-semibold text-main" href="#">adipiscing elit</a>, sed diam nonummy nibh. Lorem ipsum dolor sit amet.
-                                        </p>
-                                        <small><em>Last Update : Des 12, 2014</em></small>
-                                    </div>
-
-
-                                </div>
-                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                                <!--End first tab (Contact list)-->
-
-
-                                <!--Second tab (Custom layout)-->
-                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                                <div class="tab-pane fade" id="demo-asd-tab-2">
-
-                                    <!--Monthly billing-->
-                                    <div class="pad-all">
-                                        <p class="pad-ver text-main text-sm text-uppercase text-bold">Billing &amp; reports</p>
-                                        <p>Get <strong class="text-main">$5.00</strong> off your next bill by making sure your full payment reaches us before August 5, 2018.</p>
-                                    </div>
-                                    <hr class="new-section-xs">
-                                    <div class="pad-all">
-                                        <span class="pad-ver text-main text-sm text-uppercase text-bold">Amount Due On</span>
-                                        <p class="text-sm">August 17, 2018</p>
-                                        <p class="text-2x text-thin text-main">$83.09</p>
-                                        <button class="btn btn-block btn-success mar-top">Pay Now</button>
-                                    </div>
-
-
-                                    <hr>
-
-                                    <p class="pad-all text-main text-sm text-uppercase text-bold">Additional Actions</p>
-
-                                    <!--Simple Menu-->
-                                    <div class="list-group bg-trans">
-                                        <a href="#" class="list-group-item"><i class="demo-pli-information icon-lg icon-fw"></i> Service Information</a>
-                                        <a href="#" class="list-group-item"><i class="demo-pli-mine icon-lg icon-fw"></i> Usage Profile</a>
-                                        <a href="#" class="list-group-item"><span class="label label-info pull-right">New</span><i class="demo-pli-credit-card-2 icon-lg icon-fw"></i> Payment Options</a>
-                                        <a href="#" class="list-group-item"><i class="demo-pli-support icon-lg icon-fw"></i> Message Center</a>
-                                    </div>
-
-
-                                    <hr>
-
-                                    <div class="text-center">
-                                        <div><i class="demo-pli-old-telephone icon-3x"></i></div>
-                                        Questions?
-                                        <p class="text-lg text-semibold text-main"> (415) 234-53454 </p>
-                                        <small><em>We are here 24/7</em></small>
-                                    </div>
-                                </div>
-                                <!--End second tab (Custom layout)-->
-                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-                                <!--Third tab (Settings)-->
-                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                                <div class="tab-pane fade" id="demo-asd-tab-3">
-                                    <ul class="list-group bg-trans">
-                                        <li class="pad-top list-header">
-                                            <p class="text-main text-sm text-uppercase text-bold mar-no">Account Settings</p>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="pull-right">
-                                                <input class="toggle-switch" id="demo-switch-1" type="checkbox" checked>
-                                                <label for="demo-switch-1"></label>
-                                            </div>
-                                            <p class="mar-no text-main">Show my personal status</p>
-                                            <small class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="pull-right">
-                                                <input class="toggle-switch" id="demo-switch-2" type="checkbox" checked>
-                                                <label for="demo-switch-2"></label>
-                                            </div>
-                                            <p class="mar-no text-main">Show offline contact</p>
-                                            <small class="text-muted">Aenean commodo ligula eget dolor. Aenean massa.</small>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="pull-right">
-                                                <input class="toggle-switch" id="demo-switch-3" type="checkbox">
-                                                <label for="demo-switch-3"></label>
-                                            </div>
-                                            <p class="mar-no text-main">Invisible mode </p>
-                                            <small class="text-muted">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </small>
-                                        </li>
-                                    </ul>
-
-
-                                    <hr>
-
-                                    <ul class="list-group pad-btm bg-trans">
-                                        <li class="list-header"><p class="text-main text-sm text-uppercase text-bold mar-no">Public Settings</p></li>
-                                        <li class="list-group-item">
-                                            <div class="pull-right">
-                                                <input class="toggle-switch" id="demo-switch-4" type="checkbox" checked>
-                                                <label for="demo-switch-4"></label>
-                                            </div>
-                                            Online status
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="pull-right">
-                                                <input class="toggle-switch" id="demo-switch-5" type="checkbox" checked>
-                                                <label for="demo-switch-5"></label>
-                                            </div>
-                                            Show offline contact
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="pull-right">
-                                                <input class="toggle-switch" id="demo-switch-6" type="checkbox" checked>
-                                                <label for="demo-switch-6"></label>
-                                            </div>
-                                            Show my device icon
-                                        </li>
-                                    </ul>
-
-
-
-                                    <hr>
-
-                                    <p class="pad-hor text-main text-sm text-uppercase text-bold mar-no">Task Progress</p>
-                                    <div class="pad-all">
-                                        <p class="text-main">Upgrade Progress</p>
-                                        <div class="progress progress-sm">
-                                            <div class="progress-bar progress-bar-success" style="width: 15%;"><span class="sr-only">15%</span></div>
-                                        </div>
-                                        <small>15% Completed</small>
-                                    </div>
-                                    <div class="pad-hor">
-                                        <p class="text-main">Database</p>
-                                        <div class="progress progress-sm">
-                                            <div class="progress-bar progress-bar-danger" style="width: 75%;"><span class="sr-only">75%</span></div>
-                                        </div>
-                                        <small>17/23 Database</small>
-                                    </div>
-
-                                </div>
-                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                                <!--Third tab (Settings)-->
-
-                            </div>
-                        </div>
-                    </div>
+                <!--Modal header-->
+                <div class="modal-header" >
+                    <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+                    <h4 class="modal-title" align="Center" style="color:#000000">Data Barang</h4>
                 </div>
-            </aside>
-            <!--===================================================-->
-            <!--END ASIDE-->
 
+                <!--Modal body-->
+                <div class="modal-body"  >
+
+                                <!--Block Styled Form -->
+                                <!--===================================================-->
+                                <form action="<?php echo base_url('Barang/tambah_barang') ?>" method="post" enctype="multipart/form-data">
+                                    <div class="panel-body" >
+                                        <div class="row" >
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Kode Barang</b></label>
+                                                    <input type="text" name="Kode_Barang" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Nama Barang</b></label>
+                                                    <input type="text" name="Nama_Barang" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Kategori</b></label>
+                                                    <input type="date" name="Kategori" class="form-control">
+                                                </div>
+                                            </div>
+                                           <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Foto</b></label>
+                                                    <input type="file" name="foto">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Stok</b></label>
+                                                    <input type="text" name="Stok" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Harga</b></label>
+                                                    <input type="text" name="tlp" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Diskon</b></label>
+                                                    <input type="text" name="Diskon" class="form-control" style="height:100px;">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Status</b></label>
+                                                    <input type="text" name="Status">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!--Modal footer-->
+                <div class="modal-footer">
+                    <button class="btn btn-primary" name="btntambah" >Simpan</button>
+                    <button data-dismiss="modal" class="btn btn-default" type="button" style="color:#000000"><b>Keluar</b></button>
+                </div>
+                                </form>
+                            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===================================================-->
+    <!--End Default Bootstrap Modal-->
 
              <!--MAIN NAVIGATION-->
             <!--===================================================-->
             <nav id="mainnav-container">
                 <div id="mainnav">
-
 
 
                     <!--Menu-->
@@ -613,11 +340,11 @@
                                             <span class="pull-right dropdown-toggle">
                                                 <i class="dropdown-caret"></i>
                                             </span>
-                                            <p class="mnp-name">Aaron Chavez</p>
-                                            <span class="mnp-desc">aaron.cha@themeon.net</span>
+                                            <p class="mnp-name">lidiya</p>
+                                            <span class="mnp-desc"></span>
                                         </a>
                                     </div>
-                                  <div id="profile-nav" class="collapse list-group bg-trans">
+                                    <div id="profile-nav" class="collapse list-group bg-trans">
                                     <a href="<?= base_url().'Dashboard/view_profile' ?>" class="list-group-item">
                                         <i class="demo-pli-male icon-lg icon-fw"></i> View Profile
                                     </a>
