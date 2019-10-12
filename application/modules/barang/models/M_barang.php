@@ -11,7 +11,7 @@ class M_barang extends CI_Model {
 		 $this->db->join('tm_barang','tm_barang.kd_barang=tm_detail_barang.kd_detail');
 		 $query = $this->db->get();
 		 return $query;
-		}
+		}    
 
 	function input_data($data,$table)
   {

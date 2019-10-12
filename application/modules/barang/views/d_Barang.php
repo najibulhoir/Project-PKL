@@ -340,7 +340,7 @@
                                             <span class="pull-right dropdown-toggle">
                                                 <i class="dropdown-caret"></i>
                                             </span>
-                                            <p class="mnp-name">lidiya</p>
+                                            <p class="mnp-name"></p>
                                             <span class="mnp-desc"></span>
                                         </a>
                                     </div>
