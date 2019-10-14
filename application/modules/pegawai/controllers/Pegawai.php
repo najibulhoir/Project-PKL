@@ -31,6 +31,8 @@ class Pegawai extends CI_Controller{
 		$pass = $this->input->post('password');
 		$tel = $this->input->post('tlp');
 		$alam = $this->input->post('alamat');
+		$masuk = $this->input->post('tanggal_masuk');
+		$keluar = $this->input->post('tanggal_keluar');
 
 		$config['max_size']=2048;
 		$config['allowed_types']="png|jpg|jpeg|gif";
@@ -54,6 +56,8 @@ class Pegawai extends CI_Controller{
 			'password' => $pass,
 			'tlp' => $tel,
 			'alamat' => $alam,
+			'tanggal_masuk' => $masuk,
+			'tanggal_keluar' => $keluar,
 			'foto' => $pict );
 
 		$this->M_pegawai->input_data($data,'tm_admin');

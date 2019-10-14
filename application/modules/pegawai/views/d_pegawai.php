@@ -2,8 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <!-- Mirrored from www.themeon.net/nifty/v2.9.1/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Feb 2019 04:06:05 GMT -->
 <head>
     <meta charset="utf-8">
@@ -35,10 +33,6 @@
     <link href="<?php echo base_url();?>assets/adminlte/css/demo/nifty-demo-icons.min.css" rel="stylesheet">
 
 
-    <!--=================================================-->
-
-    <!--=================================================-->
-
     <!--Pace - Page Load Progress Par [OPTIONAL]-->
     <link href="<?php echo base_url();?>assets/adminlte/plugins/pace/pace.min.css" rel="stylesheet">
     <script src="<?php echo base_url();?>assets/adminlte/plugins/pace/pace.min.js"></script>
@@ -47,37 +41,10 @@
     <!--Demo [ DEMONSTRATION ]-->
     <link href="<?php echo base_url();?>assets/adminlte/css/demo/nifty-demo.min.css" rel="stylesheet">
 
-
-
     <!--DataTables [ OPTIONAL ]-->
     <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/media/css/dataTables.bootstrap.css" rel="stylesheet">
-	<link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" rel="stylesheet">
-
-    <!--=================================================
-
-    REQUIRED
-    You must include this in your project.
-
-
-    RECOMMENDED
-    This category must be included but you may modify which plugins or components which should be included in your project.
-
-
-    OPTIONAL
-    Optional plugins. You may choose whether to include it in your project or not.
-
-
-    DEMONSTRATION
-    This is to be removed, used for demonstration purposes only. This category must not be included in your project.
-
-
-    SAMPLE
-    Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
-
-
-    Detailed information and more samples can be found in the document.
-
-    =================================================-->
+    <link href="<?php echo base_url();?>assets/adminlte/plugins/datatables/extensions/Responsive/css/responsive.dataTables.min.css" 
+    rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/adminlte/css/bootstrap.css">
     <script type="text/javascript" src="<?php echo base_url();?>assets/adminlte/js/jquery.js"></script>
@@ -191,6 +158,8 @@
                                         <th>Email</th>
                                         <th>Telepon</th>
                                         <th>Alamat</th>
+                                        <th>Tanggal Masuk</th>
+                                        <th>Tanggal Keluar</th>
                                         <th>Foto</th>
                                         <th>Status</th>
                                         <th>Aksi</th>
@@ -205,13 +174,13 @@
                                         <th><?php echo $peg->email?></th>
                                         <th><?php echo $peg->tlp?></th>
                                         <th><?php echo $peg->alamat?></th>
+                                        <th><?php echo $peg->tanggal_masuk?></th>
+                                        <th><?php echo $peg->tanggal_keluar?></th>
                                         <th><img src="<?php echo base_url('assets/adminlte/images/'.$peg->foto)?>" style="width:100px; height:100px"></th>
                                         <th><?php echo $peg->status_pegawai?></th>
                                          <th width="250">
                                         <a href="<?php echo site_url(''.$peg->kd_admin) ?>"
-                                         class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
-                                          <a onclick="deleteConfirm('<?php echo site_url(''.$peg->kd_admin) ?>')"
-                                           href="#!" class="btn btn-small text-danger"><i class="fa fa-trash"></i> Hapus</a>
+                                         data-target="#demo-default-modal-edit" data-toggle="modal" class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
                                         </th>
                                     </tr>
                                 <?php } ?>
@@ -231,7 +200,7 @@
             <!--END CONTENT CONTAINER-->
 
 
-            <!--Default Bootstrap Modal-->
+            <!--Default Bootstrap Modal Insert-->
     <!--===================================================-->
     <div class="modal fade" id="demo-default-modal" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true" >
         <div class="modal-dialog">
@@ -244,7 +213,7 @@
                 </div>
 
                 <!--Modal body-->
-                <div class="modal-body"  >
+                <div class="modal-body">
 
                                 <!--Block Styled Form -->
                                 <!--===================================================-->
@@ -295,6 +264,18 @@
                                                     <input type="text" name="alamat" class="form-control" style="height:100px;">
                                                 </div>
                                             </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Tanggal Masuk</b></label>
+                                                    <input type="date" name="tanggal_masuk" class="form-control" >
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Tanggal Keluar</b></label>
+                                                    <input type="date" name="tanggal_keluar" class="form-control" disabled>
+                                                </div>
+                                            </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label class="control-label" style="color:#000000"><b>Foto</b></label>
@@ -308,14 +289,124 @@
                     <button class="btn btn-primary" name="btntambah" >Simpan</button>
                     <button data-dismiss="modal" class="btn btn-default" type="button" style="color:#000000"><b>Keluar</b></button>
                 </div>
-                                </form>
-                            </div>
+                    </form>
+                 </div>
             </div>
         </div>
     </div>
 
     <!--===================================================-->
-    <!--End Default Bootstrap Modal-->
+    <!--End Default Bootstrap Modal Insert-->
+
+
+          <!--Default Bootstrap Modal Edit-->
+    <!--===================================================-->
+    <div class="modal fade" id="demo-default-modal-edit" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal" aria-hidden="true" >
+        <div class="modal-dialog">
+            <div class="modal-content" >
+
+                <!--Modal header-->
+                <div class="modal-header" >
+                    <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i></button>
+                    <h4 class="modal-title" align="Center" style="color:#000000">Edit Status Pegawai</h4>
+                </div>
+
+                <!--Modal body-->
+                <div class="modal-body"  >
+
+                                <!--Block Styled Form -->
+                                <!--===================================================-->
+                                <form action="<?php echo base_url('') ?>" method="post" enctype="multipart/form-data">
+                                    <div class="panel-body" >
+                                        <div class="row" >
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Nama</b></label>
+                                                <input type="text" name="nama" class="form-control" value="<?php echo $peg->nama;?>" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Tempat Lahir</b></label>
+                                                    <input type="text" name="tempat_lahir" class="form-control" value="<?php echo $peg->tempat_lahir;?>" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Tanggal Lahir</b></label>
+                                                    <input type="date" name="tanggal_lahir" class="form-control" value="<?php echo $peg->tanggal_lahir;?>" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Email</b></label>
+                                                    <input type="email" name="email" class="form-control" value="<?php echo $peg->email;?>" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Telepon</b></label>
+                                                    <input type="text" name="tlp" class="form-control" value="<?php echo $peg->tlp;?>" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Alamat</b></label>
+                                                    <input type="text" name="alamat" class="form-control" style="height:100px;" value="<?php echo $peg->alamat;?>" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Tanggal Masuk</b></label>
+                                                    <input type="date" name="tanggal_masuk" class="form-control" value="<?php echo $peg->tanggal_masuk;?>" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Tanggal Keluar</b></label>
+                                                    <input type="date" name="tanggal_keluar" class="form-control" value="<?php echo $peg->tanggal_keluar;?>" >
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="control-label" style="color:#000000"><b>Foto</b></label>
+                                                    <input type="file" name="foto" disabled>
+                                                    <div style="padding-top:5px">
+                                                    <img src="<?php echo base_url('assets/adminlte/images/'.$peg->foto)?>"  width="60px" height="70px" id="pict">
+                                                </div>
+                                              </div>
+                                            </div>
+                                             Prodi
+                                            <?php
+                                            echo '<select class="form-control" name="kd_pegawai" style="width:150px;>' ;
+                                                foreach($pegawai as $rows)
+                                                {
+                                                    if($rows->kd_pegawai==$peg->kd_pegawai){
+                                                echo '<option value="'.$rows->kd_pegawai.'" selected="selected">'.$rows->status_pegawai.'</option>';
+                                                   }else{
+                                                echo '<option value="'.$rows->kd_pegawai.'">'.$rows->status_pegawai.'</option>';
+                                                   }
+                                             }
+                                                echo '</select>';
+                                            ?>
+                                        </div>
+                                    </div>
+
+                                     <!--Modal footer-->
+                <div class="modal-footer">
+                    <button class="btn btn-primary" name="btntambah" >Simpan</button>
+                    <button data-dismiss="modal" class="btn btn-default" type="button" style="color:#000000"><b>Keluar</b></button>
+                </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===================================================-->
+    <!--End Default Bootstrap Modal Edit-->
 
              <!--MAIN NAVIGATION-->
             <!--===================================================-->

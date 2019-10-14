@@ -34,9 +34,6 @@
     <!--Nifty Premium Icon [ DEMONSTRATION ]-->
     <link href="<?php echo base_url();?>assets/adminlte/css/demo/nifty-demo-icons.min.css" rel="stylesheet">
 
-
-    <!--=================================================-->
-
     <!--=================================================-->
 
     <!--Pace - Page Load Progress Par [OPTIONAL]-->
